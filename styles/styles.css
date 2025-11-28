@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* default styles */
+
+/* 
+   Tiro Africa Job Portal - Master Stylesheet
+   Merged and organized by page sections (top to bottom)
+*/
+
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #2d3436;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.btn-teal {
+  background-color: #309689;
+  color: #fff;
+}
+
+.btn-teal:hover {
+  background-color: #236d63;
+  color: #fff;
+}
+
+.text-teal,
+.links-teal:hover {
+  color: #236d63;
+}
+
+.bg-light-teal {
+  background-color: #EBF5F4;
+}
+
+.bg-dark {
+  background-color: #1a1a1a !important;
+}
+
+.border-secondary {
+  border-color: #495057 !important;
+}
+
+.input-group-text i,
+small i {
+  width: 16px;
+  height: 16px;
+}
+
+/* ============================================
+   HOMEPAGE STYLES
+   ============================================ */
+
+/* Navbar */
+.navbar {
+  position: relative;
+  z-index: 10;
+}
+
+/* Header Gradient Background */
+.bg-gradient-custom {
+  background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 50%, #14b8a6 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-gradient-custom::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Footer Styles */
+.hover-link {
+  transition: color 0.3s ease;
+}
+
+.hover-link:hover {
+  color: #14b8a6 !important;
+}
+
+.footer input.form-control {
+  background-color: transparent !important;
+  color: white;
+  border: 1px solid #495057;
+}
+
+.footer input.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer input.form-control:focus {
+  background-color: transparent !important;
+  color: white;
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 0.25rem rgba(20, 184, 166, 0.25);
+}
+
+/* ============================================
+   JOB PAGES STYLES
+   ============================================ */
+
+/* Breadcrumb */
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Filter Sidebar */
+aside .form-check-input {
+  margin-right: 8px;
+}
+
+/* Job Cards */
+.job-card {
+  transition: 0.2s ease;
+}
+
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* ============================================
+   ABOUT US PAGE STYLES
+   ============================================ */
+
+/* About Icon Circle */
+.about-icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #EBF5F4;
+  color: #309689;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Value Cards */
+.value-card, .category-card {
+  background: #ffffff;
+  border-radius: 0.5rem;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover, .category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: #309689;
+}
+
+.value-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #EBF5F4;
+  color: #309689;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Stats Items */
+.stat-item-about {
+  padding: 1rem;
+}
+
+/* Team Cards */
+.team-card {
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.team-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  border: 3px solid #EBF5F4;
+}
+
+/* FAQ Accordion */
+.accordion-item {
+  border: 1px solid #e9ecef;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem !important;
+  overflow: hidden;
+}
+
+.accordion-button {
+  font-weight: 500;
+  color: #2d3436;
+  background-color: #ffffff;
+  border: none;
+  padding: 1rem 1.25rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #EBF5F4;
+  color: #309689;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: #309689;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23309689'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+  padding: 1.25rem;
+  color: #636e72;
+}
+
+/* CTA Box */
+.cta-box {
+  background: linear-gradient(135deg, #309689 0%, #236d63 100%);
+  box-shadow: 0 10px 30px rgba(48, 150, 137, 0.2);
+}
+
+/* ============================================
+   CONTACT US PAGE STYLES
+   ============================================ */
+
+/* Contact Icon Circle */
+.contact-icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #EBF5F4;
+  color: #309689;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Contact Form Card */
+.contact-form-card {
+  background-color: #EBF5F4;
+  border: 1px solid #d4ebe7;
+}
+
+.contact-form-card h5 {
+  color: #212529;
+}
+
+/* Map Container */
+.map-container {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   REGISTRATION PAGE STYLES
+   ============================================ */
+
+.register-section {
+  min-height: calc(100vh - 80px);
+  padding: 3rem 0;
+  background: #f8f9fa;
+}
+
+.register-card {
+  background: #ffffff;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Form Controls */
+.form-control,
+.form-select {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #309689;
+  box-shadow: 0 0 0 0.2rem rgba(48, 150, 137, 0.1);
+}
+
+.form-label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #2d3436;
+}
+
+/* Password Toggle */
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper .form-control {
+  padding-right: 2.75rem;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding: 0 0.75rem;
+  background: transparent;
+  border: none;
+  color: #6c757d;
+  cursor: pointer;
+}
+
+.password-toggle:hover {
+  color: #309689;
+}
+
+/* Account Type Buttons */
+.btn-check:checked+.btn-outline-secondary {
+  background-color: #309689;
+  border-color: #309689;
+  color: #ffffff;
+}
+
+.btn-outline-secondary {
+  border-color: #dee2e6;
+  color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #f8f9fa;
+  border-color: #309689;
+  color: #309689;
+}
+
+/* Form Validation */
+.form-control.is-invalid,
+.form-select.is-invalid {
+  border-color: #dc3545;
+}
+
+.invalid-feedback {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Checkbox */
+.form-check-input:checked {
+  background-color: #309689;
+  border-color: #309689;
+}
+
+.form-check-input:focus {
+  border-color: #309689;
+  box-shadow: 0 0 0 0.2rem rgba(48, 150, 137, 0.1);
+}
+
+/* Alert */
+.alert-success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+  border-radius: 0.375rem;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Desktop - Sticky Sidebar */
+@media (min-width: 992px) {
+  .sticky-sidebar {
+    position: sticky;
+    top: 20px;
+    height: calc(100vh - 40px);
+  }
+
+  .sidebar-content {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 5px;
+  }
+
+  .sidebar-content::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .sidebar-content::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  .sidebar-content::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .w-md-auto {
+    width: auto !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .job-card {
+    padding: 1.5rem !important;
+  }
+
+  .register-card {
+    padding: 1.5rem;
+  }
+
+  .register-section {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .stat-item {
+    margin-bottom: 1.5rem;
+  }
+}
