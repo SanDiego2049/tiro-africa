@@ -28,7 +28,7 @@
                 <i data-lucide="briefcase" class="text-teal" style="width: 24px; height: 24px;"></i>
                 TiroAfrica
             </a>
-            <a href="login.html" class="text-muted text-decoration-none">Already have an account? 
+            <a href="login.html" class="text-muted text-decoration-none">Already have an account?
                 <span class="text-teal fw-semibold">Sign in</span></a>
         </div>
     </nav>
@@ -74,15 +74,16 @@
                             <!-- Full Name -->
                             <div class="mb-3">
                                 <label for="fullName" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
+                                <input type="text" class="form-control" id="fullName" placeholder="Ugochukwu John"
+                                    required>
                                 <div class="invalid-feedback">Please enter your full name.</div>
                             </div>
 
                             <!-- Email -->
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="john@example.com"
-                                    required>
+                                <input type="email" class="form-control" id="email"
+                                    placeholder="ugochukuw_john2001@example.com" required>
                                 <div class="invalid-feedback">Please enter a valid email.</div>
                             </div>
 
@@ -116,28 +117,24 @@
                             <!-- Password -->
                             <div class="mb-3">
                                 <label for="password" class="form-label">Password</label>
-                                <div class="password-wrapper">
+                                <div>
                                     <input type="password" class="form-control" id="password"
                                         placeholder="Create password" required>
-                                    <button type="button" class="password-toggle" id="togglePassword">
-                                        <i data-lucide="eye" style="width: 18px; height: 18px;"></i>
-                                    </button>
+                                    <div class="invalid-feedback">Password must be at least 8 characters.</div>
+
                                 </div>
                                 <small class="text-muted">At least 8 characters</small>
-                                <div class="invalid-feedback">Password must be at least 8 characters.</div>
                             </div>
 
                             <!-- Confirm Password -->
                             <div class="mb-3">
                                 <label for="confirmPassword" class="form-label">Confirm Password</label>
-                                <div class="password-wrapper">
+                                <div>
                                     <input type="password" class="form-control" id="confirmPassword"
                                         placeholder="Confirm password" required>
-                                    <button type="button" class="password-toggle" id="toggleConfirmPassword">
-                                        <i data-lucide="eye" style="width: 18px; height: 18px;"></i>
-                                    </button>
+
+                                    <div class="invalid-feedback">Passwords do not match.</div>
                                 </div>
-                                <div class="invalid-feedback">Passwords do not match.</div>
                             </div>
 
                             <!-- Terms -->
@@ -180,7 +177,6 @@
     </script>
 
     <!-- MY SCRIPT -->
-    <!-- <script src="../scripts/main.js"></script> -->
     <script src="../scripts/auth.js"></script>
 
 </body>

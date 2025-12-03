@@ -58,13 +58,10 @@
               <!-- Password -->
               <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
-                <div class="password-wrapper">
+                <div>
                   <input type="password" class="form-control" id="password" placeholder="Enter password" required>
-                  <button type="button" class="password-toggle" id="togglePassword">
-                    <i data-lucide="eye" style="width: 18px; height: 18px;"></i>
-                  </button>
+                  <div class="invalid-feedback">Please enter your password.</div>
                 </div>
-                <div class="invalid-feedback">Please enter your password.</div>
               </div>
 
               <!-- Remember Me & Forgot Password -->
@@ -106,7 +103,6 @@
   </script>
 
   <!-- MY SCRIPT -->
-  <!-- <script src="../scripts/main.js"></script> -->
   <script src="../scripts/auth.js"></script>
 
 </body>

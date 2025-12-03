@@ -1,71 +1,30 @@
-// contactus.js - combined contact + login/signup UI logic (depends on main.js)
-
-onReady(() => {
-  // Determine if this page has auth elements or the contact form
-  const isLoginPage = !!document.getElementById("loginForm");
-
-  if (isLoginPage) {
-    initializeLoginPage();
-  } else {
-    initializeContactPage();
-  }
-
-  updateIcons();
-});
-
-// --- Login / Signup UI (only UI switching & wiring; validation uses shared helpers) ---
-function initializeContactPage() {
+document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contactForm");
-  const firstName = document.getElementById("firstName");
-  const lastName = document.getElementById("lastName");
-  const email = document.getElementById("email");
-  const message = document.getElementById("message");
   const successMessage = document.getElementById("successMessage");
 
   if (!form) return;
 
-  // Live validation
-  firstName.addEventListener("input", () =>
-    validateName(firstName, "First name")
-  );
-  lastName.addEventListener("input", () => validateName(lastName, "Last name"));
-  email.addEventListener("input", () => validateEmail(email));
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    event.stopPropagation();
 
-  message.addEventListener("input", () => {
-    if (message.value.trim() === "") {
-      showError(message, "Message is required");
-    } else {
-      showSuccess(message);
-    }
-  });
-
-  // On submit
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    let ok = true;
-
-    if (!validateName(firstName, "First name")) ok = false;
-    if (!validateName(lastName, "Last name")) ok = false;
-    if (!validateEmail(email)) ok = false;
-
-    if (message.value.trim() === "") {
-      showError(message, "Message is required");
-      ok = false;
-    } else {
-      showSuccess(message);
+    // Let the browser + Bootstrap handle validation
+    if (!form.checkValidity()) {
+      form.classList.add("was-validated");
+      return;
     }
 
-    if (!ok) return;
+    // If valid: show success, reset state
+    form.classList.remove("was-validated");
 
-    // Show success message
-    successMessage.classList.remove("d-none");
+    if (successMessage) {
+      successMessage.classList.remove("d-none");
+      // Optional: auto-hide after a few seconds
+      setTimeout(() => {
+        successMessage.classList.add("d-none");
+      }, 4000);
+    }
 
-    // Reset form
     form.reset();
-    [firstName, lastName, email, message].forEach((el) =>
-      el.classList.remove("is-valid")
-    );
   });
-}
-
+});

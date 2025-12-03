@@ -1,86 +1,63 @@
-// job-board.js - job listing page (depends on main.js)
-// Corrected: added displayError() and stronger DOM guards
-
-onReady(async () => {
+document.addEventListener("DOMContentLoaded", () => {
   const jobListEl = document.getElementById("job-list");
   const paginationEl = document.getElementById("pagination");
-  const resultsCountEl =
-    document.getElementById("results-count") ||
-    document.getElementById("resultCount");
+  const resultsCountEl = document.getElementById("results-count");
 
-  // page state (kept local)
   let allJobs = [];
   let currentPage = 1;
   const jobsPerPage = 6;
 
-  // Local displayError fallback (was missing)
-  function displayError() {
-    if (jobListEl) {
+  // Fetch jobs once
+  fetch("../data/jobs-posting.json")
+    .then((res) => {
+      if (!res.ok) throw new Error("Network response not ok");
+      return res.json();
+    })
+    .then((jobs) => {
+      if (!Array.isArray(jobs) || jobs.length === 0) {
+        jobListEl.innerHTML = `<p class="text-muted">No job postings available at the moment.</p>`;
+        return;
+      }
+      allJobs = jobs;
+      render();
+    })
+    .catch((err) => {
+      console.error("Failed to load jobs:", err);
       jobListEl.innerHTML = `
         <div class="alert alert-danger" role="alert">
           <h4 class="alert-heading">Error Loading Jobs</h4>
           <p>Unable to load job listings. Please try again later.</p>
         </div>
       `;
-    } else {
-      // If jobListEl isn't present, try inserting into main as a fallback
-      const main = document.querySelector("main") || document.body;
-      const wrapper = document.createElement("div");
-      wrapper.className = "container my-5";
-      wrapper.innerHTML = `
-        <div class="alert alert-danger" role="alert">
-          <h4 class="alert-heading">Error Loading Jobs</h4>
-          <p>Unable to load job listings. Please try again later.</p>
-        </div>
-      `;
-      main.appendChild(wrapper);
-    }
-  }
-
-  try {
-    allJobs = await fetchJobs(); // shared cached fetch in main.js
-    if (!Array.isArray(allJobs) || allJobs.length === 0) {
-      // no jobs — show friendly message
-      if (jobListEl) {
-        jobListEl.innerHTML = `<p class="text-muted">No job postings available at the moment.</p>`;
-      }
-      return;
-    }
-    render();
-  } catch (err) {
-    console.error("Failed to load jobs:", err);
-    displayError();
-    return;
-  }
+    });
 
   function render() {
     displayJobs();
     updatePagination();
     updateResultsCount();
-    updateIcons();
+    refreshIcons();
   }
 
   function displayJobs() {
-    if (!jobListEl) return;
     const startIndex = (currentPage - 1) * jobsPerPage;
     const endIndex = startIndex + jobsPerPage;
     const jobsToDisplay = allJobs.slice(startIndex, endIndex);
 
     jobListEl.innerHTML = jobsToDisplay.map(createJobCard).join("");
-    updateIcons();
   }
 
   function createJobCard(job) {
-    // guard job fields so generation doesn't throw
-    const id = job && job.id != null ? job.id : "";
-    const postedTime = job && job.postedTime ? job.postedTime : "";
-    const logo = job && job.logo ? job.logo : "";
-    const company = job && job.company ? job.company : "";
-    const title = job && job.title ? job.title : "";
-    const category = job && job.category ? job.category : "";
-    const type = job && job.type ? job.type : "";
-    const salary = job && job.salary ? job.salary : "";
-    const location = job && job.location ? job.location : "";
+    const {
+      id,
+      postedTime,
+      logo,
+      company,
+      title,
+      category,
+      type,
+      salary,
+      location,
+    } = job;
 
     return `
       <div class="job-card p-3 p-md-4 mb-3 mb-md-4 rounded shadow-sm bg-white">
@@ -127,14 +104,16 @@ onReady(async () => {
     `;
   }
 
-  // --- Pagination / controls ---
   function updatePagination() {
-    if (!paginationEl) return;
     const totalPages = Math.ceil(allJobs.length / jobsPerPage);
     let html = "";
 
     if (currentPage > 1) {
-      html += `<button class="btn btn-outline-secondary px-3 px-md-4 prev-btn"> <i data-lucide="chevron-left" style="width: 16px; height: 16px;"></i> Previous</button>`;
+      html += `
+        <button class="btn btn-outline-secondary px-3 px-md-4 prev-btn">
+          <i data-lucide="chevron-left" style="width: 16px; height: 16px;"></i> Previous
+        </button>
+      `;
     }
 
     for (let i = 1; i <= totalPages; i++) {
@@ -146,21 +125,28 @@ onReady(async () => {
     }
 
     if (currentPage < totalPages) {
-      html += `<button class="btn btn-outline-secondary px-3 px-md-4 next-btn">Next <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></button>`;
+      html += `
+        <button class="btn btn-outline-secondary px-3 px-md-4 next-btn">
+          Next <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i>
+        </button>
+      `;
     }
 
     paginationEl.innerHTML = html;
-    updateIcons();
 
-    // Attach listeners
-    const prev = paginationEl.querySelector(".prev-btn");
-    const next = paginationEl.querySelector(".next-btn");
-    if (prev) prev.addEventListener("click", () => changePage(currentPage - 1));
-    if (next) next.addEventListener("click", () => changePage(currentPage + 1));
+    const prevBtn = paginationEl.querySelector(".prev-btn");
+    const nextBtn = paginationEl.querySelector(".next-btn");
+
+    if (prevBtn)
+      prevBtn.addEventListener("click", () => changePage(currentPage - 1));
+    if (nextBtn)
+      nextBtn.addEventListener("click", () => changePage(currentPage + 1));
+
     paginationEl.querySelectorAll(".page-btn").forEach((btn) => {
-      btn.addEventListener("click", () =>
-        changePage(parseInt(btn.dataset.page, 10))
-      );
+      btn.addEventListener("click", () => {
+        const page = parseInt(btn.dataset.page, 10);
+        changePage(page);
+      });
     });
   }
 
@@ -169,6 +155,7 @@ onReady(async () => {
     displayJobs();
     updatePagination();
     updateResultsCount();
+    refreshIcons();
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
@@ -179,26 +166,28 @@ onReady(async () => {
     resultsCountEl.textContent = `Showing ${startIndex}-${endIndex} of ${allJobs.length} results`;
   }
 
-  // Delegated listeners for job-list actions (bookmark, view details)
-  if (jobListEl) {
-    jobListEl.addEventListener("click", (e) => {
-      const btn = e.target.closest("button");
-      if (!btn) return;
-      const jobId = btn.dataset.jobId;
-      if (!jobId) return;
-
-      if (btn.classList.contains("view-details-btn")) {
-        viewJobDetails(jobId);
-        return;
-      }
-
-      // bookmark button (aria-label or presence of bookmark icon)
-      if (
-        btn.getAttribute("aria-label") === "bookmark" ||
-        btn.querySelector('i[data-lucide="bookmark"]')
-      ) {
-        toggleBookmark(jobId);
-      }
-    });
+  function refreshIcons() {
+    if (window.lucide && typeof window.lucide.createIcons === "function") {
+      window.lucide.createIcons();
+    }
   }
+
+  // Delegated click handlers for job list (bookmark + details)
+  jobListEl.addEventListener("click", (e) => {
+    const btn = e.target.closest("button");
+    if (!btn) return;
+
+    const jobId = btn.dataset.jobId;
+    if (!jobId) return;
+
+    if (btn.classList.contains("view-details-btn")) {
+      window.location.href = `job-details.html?id=${jobId}`;
+      return;
+    }
+
+    if (btn.getAttribute("aria-label") === "bookmark") {
+      console.log("Bookmark toggled:", jobId);
+      // future: localStorage or API call can go here
+    }
+  });
 });
