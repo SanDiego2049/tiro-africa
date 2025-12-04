@@ -1,0 +1,68 @@
+/* google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+/* default styles */
+body {
+  font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+  color: #2d3436;
+  line-height: 1.6;
+  overflow-x: hidden;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header, footer {
+  border: 10px solid #ff9100;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/*custom utility classes*/
+.oreoluwa-black-bg {
+  background: #000000;
+}
+
+.oreoluwa-color-orange:hover {
+  color: #FFA500 !important;
+}
+
+.oreoluwa-icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f5f3eb;
+  color: #FFA500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.oreoluwa-form-card {
+  background-color: #f5f0eb;
+  border: 1px solid #ebe9d4;
+}
+
+.oreoluwa-btn-orange {
+  background-color: #FFA500;
+  color: #ffffff;
+}
+
+.oreoluwa-btn-orange:hover {
+  background-color: #df8600;
+  color: #ffffff;
+}
+
+.oreoluwa-form-control:focus {
+  border-color: #FFA500;
+  box-shadow: 0 0 0 0.2rem rgba(150, 109, 48, 0.1);
+}
+
+input.oreoluwa-form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
