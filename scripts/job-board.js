@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const jobListEl = document.getElementById("job-list");
+  const jobListElement = document.getElementById("job-list");
   const paginationEl = document.getElementById("pagination");
   const resultsCountEl = document.getElementById("results-count");
 
@@ -7,29 +7,19 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentPage = 1;
   const jobsPerPage = 6;
 
-  // Fetch jobs once
-  fetch("../data/jobs-posting.json")
-    .then((res) => {
-      if (!res.ok) throw new Error("Network response not ok");
-      return res.json();
-    })
-    .then((jobs) => {
-      if (!Array.isArray(jobs) || jobs.length === 0) {
-        jobListEl.innerHTML = `<p class="text-muted">No job postings available at the moment.</p>`;
-        return;
-      }
-      allJobs = jobs;
-      render();
-    })
-    .catch((err) => {
-      console.error("Failed to load jobs:", err);
-      jobListEl.innerHTML = `
-        <div class="alert alert-danger" role="alert">
-          <h4 class="alert-heading">Error Loading Jobs</h4>
-          <p>Unable to load job listings. Please try again later.</p>
-        </div>
-      `;
-    });
+  // Load jobs from jobsData
+  if (typeof jobsData === 'undefined' || !Array.isArray(jobsData) || jobsData.length === 0) {
+    jobListElement.innerHTML = `
+      <div class="alert alert-warning" role="alert">
+        <h4 class="alert-heading">No Jobs Available</h4>
+        <p>No job postings available at the moment. Please check back later.</p>
+      </div>
+    `;
+    return;
+  }
+
+  allJobs = jobsData;
+  render();
 
   function render() {
     displayJobs();
@@ -43,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const endIndex = startIndex + jobsPerPage;
     const jobsToDisplay = allJobs.slice(startIndex, endIndex);
 
-    jobListEl.innerHTML = jobsToDisplay.map(createJobCard).join("");
+    jobListElement.innerHTML = jobsToDisplay.map(createJobCard).join("");
   }
 
   function createJobCard(job) {
@@ -173,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Delegated click handlers for job list (bookmark + details)
-  jobListEl.addEventListener("click", (e) => {
+  jobListElement.addEventListener("click", (e) => {
     const btn = e.target.closest("button");
     if (!btn) return;
 
@@ -187,7 +177,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (btn.getAttribute("aria-label") === "bookmark") {
       console.log("Bookmark toggled:", jobId);
-      // future: localStorage or API call can go here
     }
   });
 });

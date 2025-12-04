@@ -1,4 +1,4 @@
-[
+const jobsData = [
   {
     "id": 1,
     "title": "Forward Security Director",
