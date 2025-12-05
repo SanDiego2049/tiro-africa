@@ -1,298 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Tiro Africa</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - Tiro Africa</title>
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
 
-  <!-- bootstrap css -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/job-logo.png" type="image/png" />
 
-  <link rel="shortcut icon" href="../assets/job-logo.png" type="image/png">
+    <!--  <link rel="stylesheet" href="../styles/oreoluwa.css" /> -->
+    <!-- <link rel="stylesheet" href="../styles/yemi.css" /> -->
+    <link rel="stylesheet" href="../styles/eziagbor.css" />
 
-  <!-- <link rel="stylesheet" href="../styles/oreoluwa.css"> -->
-  <!-- <link rel="stylesheet" href="../styles/yemi.css"> -->
+    <!-- custom css -->
+    <!--  <link rel="stylesheet" href="../styles/styles.css" /> -->
+  </head>
 
-  <!-- custom css -->
-  <link rel="stylesheet" href="../styles/styles.css">
-  
- 
-
-</head>
-
-<body>
-  <header class="bg-gradient-custom oreoluwa-header yemi-hero oreoluwa-black-bg yemi-dark-bg">
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark py-3">
-      <div class="container-fluid px-3 px-md-4">
-        <a class="navbar-brand fw-bold fs-4" href="../index.html">
-          <i data-lucide="briefcase" style="width: 24px; height: 24px;"></i>
-          TiroAfrica
-        </a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
-            <li class="nav-item">
-              <a class="nav-link px-3 py-2" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-3 py-2" href="job-board.html">Jobs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-3 py-2" href="about-us.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active px-3 py-2 bg-white fw-bold bg-opacity-10 rounded" aria-current="page"
-                href="contact-us.html">Contact Us</a>
-            </li>
-          </ul>
-          <div class="d-grid d-lg-flex gap-2 mt-3 mt-lg-0">
-            <a href="login.html" class="btn btn-outline-light px-4">Login</a>
-            <a href="register.html" class="btn btn-light text-teal oreoluwa-color-orange yemi-teal px-4 fw-semibold">Register</a>
+  <body>
+    <header
+      class="bg-gradient-custom bg-gradient-eziagbor oreoluwa-header yemi-hero oreoluwa-black-bg yemi-dark-bg"
+    >
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark py-3">
+        <div class="container-fluid px-3 px-md-4">
+          <a class="navbar-brand fw-bold fs-4" href="../index.html">
+            <i data-lucide="briefcase" style="width: 24px; height: 24px"></i>
+            TiroAfrica
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
+              <li class="nav-item">
+                <a class="nav-link px-3 py-2" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 py-2" href="job-board.html">Jobs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 py-2" href="about-us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active px-3 py-2 bg-white fw-bold bg-opacity-10 rounded"
+                  aria-current="page"
+                  href="contact-us.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+            <div class="d-grid d-lg-flex gap-2 mt-3 mt-lg-0">
+              <a href="login.html" class="btn btn-outline-light px-4">Login</a>
+              <a
+                href="register.html"
+                class="btn btn-light text-teal oreoluwa-color-orange yemi-teal px-4 fw-semibold"
+                >Register</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <!-- hero section -->
-    <section class="container-fluid py-4 py-md-5 my-2 my-md-4 px-3 px-md-4">
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-10 col-xl-8 text-center text-white">
-          <h1 class="display-5 display-md-4 fw-bold mb-3">Contact Us</h1>
-          <p class="lead mb-4 fs-6 fs-md-5 opacity-90">We'd love to hear from you. Get in touch with our team.</p>
+      <!-- hero section -->
+      <section class="container-fluid py-4 py-md-5 my-2 my-md-4 px-3 px-md-4">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8 text-center text-white">
+            <h1 class="display-5 display-md-4 fw-bold mb-3">Contact Us</h1>
+            <p class="lead mb-4 fs-6 fs-md-5 opacity-90">
+              We'd love to hear from you. Get in touch with our team.
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- contact section -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <div class="row g-5">
+          <!-- left info -->
+          <div class="col-lg-6">
+            <h2 class="fw-bold mb-4">
+              You Will Grow, You Will Succeed. We Promise That
+            </h2>
+            <p class="text-muted mb-5">
+              Delivering top-notch facilities and services. Organise meetings in
+              modern structured conference halls.
+            </p>
+
+            <div class="contact-details">
+              <div class="mb-4 d-flex align-items-start">
+                <div
+                  class="contact-icon-circle contact-icon-eziagbor oreoluwa-icon-circle yemi-circle me-3"
+                >
+                  <i data-lucide="phone" style="width: 20px; height: 20px"></i>
+                </div>
+                <div>
+                  <h6 class="fw-semibold mb-1">Call for inquiry</h6>
+                  <p class="text-muted mb-0">+353 08 389 6895</p>
+                </div>
+              </div>
+
+              <div class="mb-4 d-flex align-items-start">
+                <div
+                  class="contact-icon-circle contact-icon-eziagbor oreoluwa-icon-circle yemi-circle me-3"
+                >
+                  <i data-lucide="mail" style="width: 20px; height: 20px"></i>
+                </div>
+                <div>
+                  <h6 class="fw-semibold mb-1">Send us email</h6>
+                  <p class="text-muted mb-0">hello@tiroafrica.ie</p>
+                </div>
+              </div>
+
+              <div class="mb-4 d-flex align-items-start">
+                <div
+                  class="contact-icon-circle contact-icon-eziagbor oreoluwa-icon-circle yemi-circle me-3"
+                >
+                  <i data-lucide="clock" style="width: 20px; height: 20px"></i>
+                </div>
+                <div>
+                  <h6 class="fw-semibold mb-1">Opening hours</h6>
+                  <p class="text-muted mb-0">Mon - Fri: 10AM - 10PM</p>
+                </div>
+              </div>
+
+              <div class="mb-4 d-flex align-items-start">
+                <div
+                  class="contact-icon-circle contact-icon-eziagbor oreoluwa-icon-circle yemi-circle me-3"
+                >
+                  <i
+                    data-lucide="map-pin"
+                    style="width: 20px; height: 20px"
+                  ></i>
+                </div>
+                <div>
+                  <h6 class="fw-semibold mb-1">Office</h6>
+                  <p class="text-muted mb-0">
+                    71 North Road, Mayor Street, IE D17GH3R
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- right form -->
+          <div class="col-lg-6">
+            <div
+              class="contact-form-card contact-form-eziagbor oreoluwa-form-card yemi-card p-4 rounded-3 shadow-sm"
+            >
+              <h5 class="fw-bold mb-1">Contact Info</h5>
+              <p class="text-muted small mb-4">
+                Feel free to drop us a message
+              </p>
+
+              <form id="contactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">First Name</label>
+                    <input
+                      type="text"
+                      class="form-control eziagbor-form-control oreoluwa-form-control yemi-input"
+                      id="firstName"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please enter your first name.
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Last Name</label>
+                    <input
+                      type="text"
+                      class="form-control eziagbor-form-control oreoluwa-form-control yemi-input"
+                      id="lastName"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please enter your last name.
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label fw-semibold">Email Address</label>
+                    <input
+                      type="email"
+                      class="form-control eziagbor-form-control oreoluwa-form-control yemi-input"
+                      id="email"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please enter a valid email.
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label fw-semibold">Message</label>
+                    <textarea
+                      rows="4"
+                      class="form-control eziagbor-form-control oreoluwa-form-control yemi-input"
+                      id="message"
+                      required
+                    ></textarea>
+                    <div class="invalid-feedback">
+                      Please enter your message.
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button
+                      type="submit"
+                      class="btn btn-teal eziagbor-btn oreoluwa-btn-orange yemi-button w-100 py-2"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+              <!-- success message -->
+              <div class="alert alert-success mt-3 d-none" id="successMessage">
+                <i
+                  data-lucide="check-circle"
+                  style="width: 18px; height: 18px"
+                ></i>
+                Message sent successfully!
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  </header>
 
-  <!-- contact section -->
-  <section class="py-5 bg-white">
-    <div class="container">
-      <div class="row g-5">
-        <!-- left info -->
-        <div class="col-lg-6">
-          <h2 class="fw-bold mb-4">You Will Grow, You Will Succeed. We Promise That</h2>
-          <p class="text-muted mb-5">
-            Delivering top-notch facilities and services. Organise meetings in modern structured conference halls.
-          </p>
+    <!-- map section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="map-container rounded-3 overflow-hidden shadow">
+          <img
+            src="../assets/map2.png"
+            class="img-fluid w-100"
+            alt="Map"
+            style="min-height: 400px; object-fit: cover"
+          />
+        </div>
+      </div>
+    </section>
 
-          <div class="contact-details">
-            <div class="mb-4 d-flex align-items-start">
-              <div class="contact-icon-circle oreoluwa-icon-circle yemi-circle me-3">
-                <i data-lucide="phone" style="width: 20px; height: 20px;"></i>
-              </div>
-              <div>
-                <h6 class="fw-semibold mb-1">Call for inquiry</h6>
-                <p class="text-muted mb-0">+353 08 389 6895</p>
-              </div>
+    <!-- footer -->
+    <footer
+      class="oreoluwa-footer yemi-foot footer bg-dark text-white py-5 mt-5"
+    >
+      <div class="container">
+        <div class="row g-4">
+          <!-- Brand Section -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="d-flex align-items-center mb-3">
+              <i
+                data-lucide="briefcase"
+                class="me-2"
+                style="width: 24px; height: 24px"
+              ></i>
+              <h5 class="mb-0 fw-bold">TiroAfrica</h5>
             </div>
+            <p class="mb-0 small">
+              TiroAfrica is a platform that connects job seekers with employers.
+            </p>
+          </div>
 
-            <div class="mb-4 d-flex align-items-start">
-              <div class="contact-icon-circle oreoluwa-icon-circle yemi-circle me-3">
-                <i data-lucide="mail" style="width: 20px; height: 20px;"></i>
-              </div>
-              <div>
-                <h6 class="fw-semibold mb-1">Send us email</h6>
-                <p class="text-muted mb-0">hello@tiroafrica.ie</p>
-              </div>
-            </div>
+          <!-- company links -->
+          <div class="col-6 col-md-6 col-lg-3">
+            <h6 class="fw-bold mb-3">Company</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal"
+                  >About Us</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal"
+                  >Our Team</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal"
+                  >Partners</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal"
+                  >For Candidates</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal"
+                  >For Employers</a
+                >
+              </li>
+            </ul>
+          </div>
 
-            <div class="mb-4 d-flex align-items-start">
-              <div class="contact-icon-circle oreoluwa-icon-circle yemi-circle me-3">
-                <i data-lucide="clock" style="width: 20px; height: 20px;"></i>
-              </div>
-              <div>
-                <h6 class="fw-semibold mb-1">Opening hours</h6>
-                <p class="text-muted mb-0">Mon - Fri: 10AM - 10PM</p>
-              </div>
-            </div>
+          <!-- job categories -->
+          <div class="col-6 col-md-6 col-lg-3">
+            <h6 class="fw-bold mb-3">Job Categories</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal"
+                  >Commerce</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal"
+                  >Hotels & Tourism</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal"
+                  >Technology</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal"
+                  >Education</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal"
+                  >Healthcare</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal"
+                  >Agriculture</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal"
+                  >Construction</a
+                >
+              </li>
+            </ul>
+          </div>
 
-            <div class="mb-4 d-flex align-items-start">
-              <div class="contact-icon-circle oreoluwa-icon-circle yemi-circle me-3">
-                <i data-lucide="map-pin" style="width: 20px; height: 20px;"></i>
-              </div>
-              <div>
-                <h6 class="fw-semibold mb-1">Office</h6>
-                <p class="text-muted mb-0">71 North Road, Mayor Street, IE D17GH3R</p>
-              </div>
+          <!-- newsletter -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <h6 class="fw-bold mb-3">Newsletter</h6>
+            <p class="text-white-50 small mb-3">
+              Subscribe to our newsletter to get the latest job updates and
+              career advice.
+            </p>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control oreoluwa-form-control yemi-input bg-transparent text-white border-secondary"
+                placeholder="Email Address"
+              />
             </div>
+            <button
+              class="btn btn-teal eziagbor-btn oreoluwa-btn-orange yemi-button w-100 fw-semibold"
+            >
+              Subscribe now
+            </button>
           </div>
         </div>
 
-        <!-- right form -->
-        <div class="col-lg-6">
-          <div class="contact-form-card oreoluwa-form-card yemi-card p-4 rounded-3 shadow-sm">
-            <h5 class="fw-bold mb-1">Contact Info</h5>
-            <p class="text-muted small mb-4">Feel free to drop us a message</p>
+        <!-- bottom bar -->
+        <hr class="border-secondary my-4" />
 
-            <form id="contactForm" novalidate>
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label class="form-label fw-semibold">First Name</label>
-                  <input type="text" class="form-control oreoluwa-form-control yemi-input" id="firstName" required>
-                  <div class="invalid-feedback">Please enter your first name.</div>
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label fw-semibold">Last Name</label>
-                  <input type="text" class="form-control oreoluwa-form-control yemi-input" id="lastName" required>
-                  <div class="invalid-feedback">Please enter your last name.</div>
-                </div>
-                <div class="col-12">
-                  <label class="form-label fw-semibold">Email Address</label>
-                  <input type="email" class="form-control oreoluwa-form-control yemi-input" id="email" required>
-                  <div class="invalid-feedback">Please enter a valid email.</div>
-                </div>
-                <div class="col-12">
-                  <label class="form-label fw-semibold">Message</label>
-                  <textarea rows="4" class="form-control oreoluwa-form-control yemi-input" id="message" required></textarea>
-                  <div class="invalid-feedback">Please enter your message.</div>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-teal oreoluwa-btn-orange yemi-button w-100 py-2">Send Message</button>
-                </div>
-              </div>
-            </form>
-
-            <!-- success message -->
-            <div class="alert alert-success mt-3 d-none" id="successMessage">
-              <i data-lucide="check-circle" style="width: 18px; height: 18px;"></i>
-              Message sent successfully!
-            </div>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <p class="mb-0 small text-white-50">
+              © Copyright 2025 TiroAfrica. All Rights Reserved.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <a
+              href="#"
+              class="text-white text-decoration-none small me-3 hover-link oreoluwa-color-orange yemi-teal"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-white text-decoration-none small hover-link oreoluwa-color-orange yemi-teal"
+              >Terms & Conditions</a
+            >
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- map section -->
-  <section class="py-5 bg-light">
-    <div class="container">
-      <div class="map-container rounded-3 overflow-hidden shadow">
-        <img src="../assets/map2.png" class="img-fluid w-100" alt="Map" style="min-height: 400px; object-fit: cover;">
-      </div>
-    </div>
-  </section>
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- footer -->
-  <footer class="oreoluwa-footer yemi-foot footer bg-dark text-white py-5 mt-5">
-    <div class="container">
-      <div class="row g-4">
+    <!-- lucide icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
 
-        <!-- Brand Section -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="d-flex align-items-center mb-3">
-            <i data-lucide="briefcase" class="me-2" style="width: 24px; height: 24px;"></i>
-            <h5 class="mb-0 fw-bold">TiroAfrica</h5>
-          </div>
-          <p class="mb-0 small">TiroAfrica is a platform that connects job seekers with employers.</p>
-        </div>
-
-        <!-- company links -->
-        <div class="col-6 col-md-6 col-lg-3">
-          <h6 class="fw-bold mb-3">Company</h6>
-          <ul class="list-unstyled">
-            <li class="mb-2">
-              <a href="#" class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal">About Us</a>
-            </li>
-            <li class="mb-2">
-              <a href="#" class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal">Our Team</a>
-            </li>
-            <li class="mb-2">
-              <a href="#" class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal">Partners</a>
-            </li>
-            <li class="mb-2">
-              <a href="#" class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal">For Candidates</a>
-            </li>
-            <li class="mb-2">
-              <a href="#" class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal">For Employers</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- job categories -->
-        <div class="col-6 col-md-6 col-lg-3">
-          <h6 class="fw-bold mb-3">Job Categories</h6>
-          <ul class="list-unstyled">
-            <li class="mb-2">
-              <a href="#" class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal">Commerce</a>
-            </li>
-            <li class="mb-2">
-              <a href="#" class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal">Hotels & Tourism</a>
-            </li>
-            <li class="mb-2">
-              <a href="#" class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal">Technology</a>
-            </li>
-            <li class="mb-2">
-              <a href="#" class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal">Education</a>
-            </li>
-            <li class="mb-2">
-              <a href="#" class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal">Healthcare</a>
-            </li>
-            <li class="mb-2">
-              <a href="#" class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal">Agriculture</a>
-            </li>
-            <li class="mb-2">
-              <a href="#" class="text-white-50 text-decoration-none small hover-link oreoluwa-color-orange yemi-teal">Construction</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- newsletter -->
-        <div class="col-12 col-md-6 col-lg-3">
-          <h6 class="fw-bold mb-3">Newsletter</h6>
-          <p class="text-white-50 small mb-3">
-            Subscribe to our newsletter to get the latest job updates and career advice.
-          </p>
-          <div class="mb-3">
-            <input type="email" class="form-control oreoluwa-form-control yemi-input bg-transparent text-white border-secondary"
-              placeholder="Email Address">
-          </div>
-          <button class="btn btn-teal oreoluwa-btn-orange yemi-button w-100 fw-semibold">Subscribe now</button>
-        </div>
-
-      </div>
-
-      <!-- bottom bar -->
-      <hr class="border-secondary my-4">
-
-      <div class="row align-items-center">
-        <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
-          <p class="mb-0 small text-white-50">
-            © Copyright 2025 TiroAfrica. All Rights Reserved.
-          </p>
-        </div>
-        <div class="col-12 col-md-6 text-center text-md-end">
-          <a href="#" class="text-white text-decoration-none small me-3 hover-link oreoluwa-color-orange yemi-teal">Privacy Policy</a>
-          <a href="#" class="text-white text-decoration-none small hover-link oreoluwa-color-orange yemi-teal">Terms & Conditions</a>
-        </div>
-      </div>
-
-    </div>
-  </footer>
-
-  <!-- bootstrap script -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-  </script>
-
-  <!-- lucide icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script>
-    lucide.createIcons();
-  </script>
-
-  <!-- my script -->
-  <script src="../scripts/contactus.js"></script>
-
-</body>
-
+    <!-- my script -->
+    <script src="../scripts/contactus.js"></script>
+  </body>
 </html>

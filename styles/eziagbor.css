@@ -1,0 +1,62 @@
+/* Eziagbor Theme Stylesheet */
+.eziagbor-btn {
+  background-color: #4a3aff;
+  color: #fff;
+}
+
+.eziagbor-btn:hover {
+  background-color: #3829cc;
+  color: #fff;
+}
+
+.text-teal,
+.links-teal:hover {
+  color: #3829cc;
+}
+
+.bg-light-teal {
+  background-color: #f0eeff;
+}
+
+/* Header gradient with purple shades */
+.bg-gradient-eziagbor {
+  background: linear-gradient(135deg, #4a3aff 0%, #ab7ef1 50%, #867cff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Footer hover links */
+.hover-link:hover {
+  color: #6b5fff !important;
+}
+
+/* Contact page */
+.contact-icon-eziagbor {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0eeff;
+  color: #4a3aff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-form-eziagbor {
+  background-color: #f0eeff;
+  border: 1px solid #ddd7ff;
+}
+
+/* Form control */
+.eziagbor-form-control:focus {
+  border-color: #4a3aff;
+  box-shadow: 0 0 0 0.2rem rgba(74, 58, 255, 0.1);
+}
+
+.footer input.form-control:focus {
+  background-color: transparent;
+  color: white;
+  border-color: #6b5fff;
+  box-shadow: 0 0 0 0.25rem rgba(107, 95, 255, 0.25);
+}
