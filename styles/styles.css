@@ -1,9 +1,7 @@
 /* google fonts import */
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* default styles */
-
 body {
   font-family: 'Inter', sans-serif;
   color: #2d3436;
@@ -26,10 +24,7 @@ h1 {
   line-height: 1.2;
 }
 
-/*
-   UTILITY CLASSES
-   */
-
+/* utility classes  */
 .btn-teal {
   background-color: #309689;
   color: #fff;
@@ -49,28 +44,158 @@ h1 {
   background-color: #EBF5F4;
 }
 
-.input-group-text i,
-small i {
+/* RESPONSIVE ICONS - Updated */
+.input-group-text i {
   width: 16px;
   height: 16px;
 }
 
-/*langing PAGE */
+small i {
+  width: 14px;
+  height: 14px;
+}
 
-/* Navbar */
+@media (min-width: 768px) {
+  small i {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Navbar brand icon - responsive sizing */
+.navbar-brand i {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand i {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Hero section icons - responsive */
+.hero-stat-icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 768px) {
+  .hero-stat-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Company logos section icons */
+.company-logo-icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 768px) {
+  .company-logo-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (min-width: 992px) {
+  .company-logo-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Job card icons - small and responsive */
+.job-detail-icon {
+  width: 14px;
+  height: 14px;
+}
+
+@media (min-width: 768px) {
+  .job-detail-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Bookmark button icon */
+.btn-link i {
+  width: 18px;
+  height: 18px;
+}
+
+@media (min-width: 768px) {
+  .btn-link i {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Category card icons - responsive circle size */
+.category-icon-wrapper {
+  width: 50px;
+  height: 50px;
+}
+
+.category-icon-wrapper i {
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 768px) {
+  .category-icon-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .category-icon-wrapper i {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (min-width: 992px) {
+  .category-icon-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .category-icon-wrapper i {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Footer icons */
+.footer i {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer i {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* navbar */
 .navbar {
   position: relative;
   z-index: 10;
 }
 
-/* Header Gradient Background */
+/* header background */
 .bg-gradient-custom {
   background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 50%, #14b8a6 100%);
   position: relative;
   overflow: hidden;
 }
 
-/* Footer Styles */
+/* footer styles */
 .hover-link {
   transition: color 0.3s ease;
 }
@@ -90,15 +215,11 @@ small i {
   box-shadow: 0 0 0 0.25rem rgba(20, 184, 166, 0.25);
 }
 
-/* Job page */
-
-
-/* Filter Sidebar */
+/* job style */
 aside .form-check-input {
   margin-right: 8px;
 }
 
-/* Job Cards */
 .job-card {
   transition: 0.2s ease;
 }
@@ -112,9 +233,7 @@ aside .form-check-input {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-/*ABOUT US PAGE STYLES*/
-
-/* About Icon Circle */
+/*about us style*/
 .about-icon-circle {
   width: 50px;
   height: 50px;
@@ -127,7 +246,7 @@ aside .form-check-input {
   flex-shrink: 0;
 }
 
-/* Value Cards */
+/* value cards */
 .value-card, .category-card {
   background: #ffffff;
   border-radius: 0.5rem;
@@ -152,7 +271,7 @@ aside .form-check-input {
   justify-content: center;
 }
 
-/* Team Cards */
+/* team cards */
 .team-card {
   padding: 1.5rem;
   background: #ffffff;
@@ -173,7 +292,7 @@ aside .form-check-input {
   border: 3px solid #EBF5F4;
 }
 
-/* FAQ Accordion */
+/* faq accordion */
 .accordion-item {
   border: 1px solid #e9ecef;
   margin-bottom: 1rem;
@@ -209,15 +328,13 @@ aside .form-check-input {
   color: #636e72;
 }
 
-/* CTA Box */
+/* cta box */
 .cta-box {
   background: linear-gradient(135deg, #309689 0%, #236d63 100%);
   box-shadow: 0 10px 30px rgba(48, 150, 137, 0.2);
 }
 
-/* Contacts */
-
-/* Contact Icon Circle */
+/* contact style */
 .contact-icon-circle {
   width: 40px;
   height: 40px;
@@ -230,7 +347,6 @@ aside .form-check-input {
   flex-shrink: 0;
 }
 
-/* Contact Form Card */
 .contact-form-card {
   background-color: #EBF5F4;
   border: 1px solid #d4ebe7;
@@ -240,13 +356,12 @@ aside .form-check-input {
   color: #212529;
 }
 
-/* Map Container */
+/* map style */
 .map-container {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* REGISTRATION PAG */
-
+/* registeration style */
 .register-section {
   min-height: calc(100vh - 80px);
   padding: 3rem 0;
@@ -260,7 +375,7 @@ aside .form-check-input {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* Form Controls */
+/* form controls */
 .form-control:focus,
 .form-select:focus {
   border-color: #309689;
@@ -268,7 +383,7 @@ aside .form-check-input {
 }
 
 
-/* Password Toggle */
+/* password toggle */
 .password-wrapper {
   position: relative;
 }
@@ -277,7 +392,7 @@ aside .form-check-input {
   padding-right: 2.75rem;
 }
 
-/* Account Type Buttons */
+/* account type buttons */
 .btn-check:checked+.btn-outline-secondary {
   background-color: #309689;
   border-color: #309689;
@@ -295,7 +410,7 @@ aside .form-check-input {
   color: #309689;
 }
 
-/* Checkbox */
+/* checkbox */
 .form-check-input:checked {
   background-color: #309689;
   border-color: #309689;
@@ -307,9 +422,9 @@ aside .form-check-input {
 }
 
 
-/*RESPONSIVE DESIGN */
+/*responsiveness design */
 
-/* Desktop - Sticky Sidebar */
+/* destop - sticky sidebar */
 @media (min-width: 992px) {
   .sticky-sidebar {
     position: sticky;
@@ -338,7 +453,7 @@ aside .form-check-input {
   }
 }
 
-/* Tablet */
+/* tablet */
 @media (min-width: 768px) {
   .w-md-auto {
     width: auto !important;
@@ -351,7 +466,7 @@ aside .form-check-input {
   }
 }
 
-/* Mobile */
+/* mobile */
 @media (max-width: 767px) {
   .hero-title {
     font-size: 2rem;

@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // If valid: show success, reset state
+    // if valid: show success, reset state
     form.classList.remove("was-validated");
 
     if (successMessage) {

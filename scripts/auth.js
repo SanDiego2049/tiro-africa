@@ -1,98 +1,74 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const loginForm = document.getElementById("loginForm");
-  const registerForm = document.getElementById("registrationForm");
-
-  if (loginForm) {
-    initLoginForm(loginForm);
-  }
-
-  if (registerForm) {
-    initRegisterForm(registerForm);
-  }
-});
-
-// ----- Login form -----
-
-function initLoginForm(form) {
-  const successMessage = document.getElementById("successMessage");
-
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    event.stopPropagation();
-
-    // Let browser + Bootstrap handle required, type="email", etc.
-    if (!form.checkValidity()) {
-      form.classList.add("was-validated");
-      return;
-    }
-
-    form.classList.remove("was-validated");
-
-    if (successMessage) {
-      successMessage.classList.remove("d-none");
-      setTimeout(() => {
-        successMessage.classList.add("d-none");
-      }, 4000);
-    }
-
-    // Placeholder: this is where you'd send data to your backend
-    console.log("Login form is valid. Submit to server here.");
-  });
-}
-
-// ----- Register form -----
-
-function initRegisterForm(form) {
-  const successMessage = document.getElementById("successMessage");
-  const passwordInput = document.getElementById("password");
-  const confirmPasswordInput = document.getElementById("confirmPassword");
-
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    event.stopPropagation();
-
-    // First, let native validation run (required, email, etc.)
-    if (!form.checkValidity()) {
-      form.classList.add("was-validated");
-      return;
-    }
-
-    // Extra check: passwords must match (if both fields exist)
-    if (passwordInput && confirmPasswordInput) {
-      const password = passwordInput.value;
-      const confirm = confirmPasswordInput.value;
-
-      // Reset previous invalid state
-      confirmPasswordInput.classList.remove("is-invalid");
-
-      if (password !== confirm) {
-        form.classList.add("was-validated");
-        confirmPasswordInput.classList.add("is-invalid");
-
-        const feedback =
-          confirmPasswordInput.parentElement.querySelector(".invalid-feedback");
-        if (feedback) {
-          feedback.textContent = "Passwords do not match.";
-        }
+  // Phone validation
+  const phone = document.getElementById("phone");
+  if (phone) {
+    const feedback = phone.parentElement.nextElementSibling;
+    phone.addEventListener("input", function () {
+      const val = this.value;
+      if (!val.length) {
+        this.classList.remove("is-invalid");
+        this.setCustomValidity("");
+        if (feedback) feedback.style.display = "none";
         return;
       }
-    }
+      const invalid = /[a-zA-Z]/.test(val) || this.validity.patternMismatch;
+      this.classList.toggle("is-invalid", invalid);
+      this.setCustomValidity(invalid ? "Invalid" : "");
+    });
+  }
 
-    // All good
-    form.classList.remove("was-validated");
+  // Login form
+  const loginForm = document.getElementById("loginForm");
+  if (loginForm) {
+    const successMsg = document.getElementById("successMessage");
+    loginForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      if (!loginForm.checkValidity()) {
+        loginForm.classList.add("was-validated");
+        return;
+      }
+      loginForm.classList.remove("was-validated");
+      if (successMsg) {
+        successMsg.classList.remove("d-none");
+        setTimeout(() => successMsg.classList.add("d-none"), 4000);
+      }
+    });
+  }
 
-    if (successMessage) {
-      successMessage.classList.remove("d-none");
-      setTimeout(() => {
-        successMessage.classList.add("d-none");
-      }, 4000);
-    }
+  // Register form
+  const registerForm = document.getElementById("registrationForm");
+  if (registerForm) {
+    const successMsg = document.getElementById("successMessage");
+    const password = document.getElementById("password");
+    const confirmPassword = document.getElementById("confirmPassword");
 
-    form.reset();
+    registerForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      if (!registerForm.checkValidity()) {
+        registerForm.classList.add("was-validated");
+        return;
+      }
 
-    // Clear any visual validation classes
-    Array.from(form.querySelectorAll(".is-valid, .is-invalid")).forEach((el) =>
-      el.classList.remove("is-valid", "is-invalid")
-    );
-  });
-}
+      // Password match check
+      if (password && confirmPassword && password.value !== confirmPassword.value) {
+        confirmPassword.classList.add("is-invalid");
+        const feedback = confirmPassword.parentElement.querySelector(".invalid-feedback");
+        if (feedback) feedback.textContent = "Passwords do not match.";
+        registerForm.classList.add("was-validated");
+        return;
+      }
+
+      registerForm.classList.remove("was-validated");
+      if (successMsg) {
+        successMsg.classList.remove("d-none");
+        setTimeout(() => successMsg.classList.add("d-none"), 4000);
+      }
+      registerForm.reset();
+      registerForm.querySelectorAll(".is-valid, .is-invalid").forEach((el) =>
+        el.classList.remove("is-valid", "is-invalid")
+      );
+    });
+  }
+});

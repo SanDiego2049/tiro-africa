@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - Tiro Africa</title>
 
-    <!-- BOOTSTRAP CSS -->
+    <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <!-- Google Fonts -->
+    <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- CUSTOM CSS -->
+    <!-- custom css -->
     <link rel="stylesheet" href="../styles/styles.css">
 
     <link rel="shortcut icon" href="../assets/job-logo.png" type="image/png">
@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <!-- Simple Navbar -->
+    <!-- navbar -->
     <nav class="navbar navbar-light bg-white border-bottom py-3">
         <div class="container">
             <a class="navbar-brand fw-bold fs-4" href="../index.html">
@@ -33,13 +33,13 @@
         </div>
     </nav>
 
-    <!-- Register Section -->
+    <!-- register section -->
     <section class="register-section">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-5 col-md-7">
 
-                    <!-- Header -->
+                    <!-- header -->
                     <div class="text-center mb-4">
                         <h2 class="fw-bold mb-2">Create Your Account</h2>
                         <p class="text-muted">Quick and easy setup</p>
@@ -48,7 +48,6 @@
                     <div class="register-card">
                         <form id="registrationForm" class="register-form" novalidate>
 
-                            <!-- Account Type - Simplified -->
                             <div class="mb-4">
                                 <label class="form-label fw-semibold">I am a</label>
                                 <div class="row g-2">
@@ -71,7 +70,7 @@
                                 </div>
                             </div>
 
-                            <!-- Full Name -->
+                            <!-- full name -->
                             <div class="mb-3">
                                 <label for="fullName" class="form-label">Full Name</label>
                                 <input type="text" class="form-control" id="fullName" placeholder="Ugochukwu John"
@@ -79,7 +78,7 @@
                                 <div class="invalid-feedback">Please enter your full name.</div>
                             </div>
 
-                            <!-- Email -->
+                            <!-- email -->
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
                                 <input type="email" class="form-control" id="email"
@@ -87,15 +86,14 @@
                                 <div class="invalid-feedback">Please enter a valid email.</div>
                             </div>
 
-                            <!-- Phone -->
+                            <!-- phone -->
                             <div class="mb-3">
                                 <label for="phone" class="form-label">Phone Number</label>
-                                <input type="tel" class="form-control" id="phone" placeholder="+234 XXX XXX XXXX"
-                                    required>
-                                <div class="invalid-feedback">Please enter your phone number.</div>
+                                <input type="tel" class="form-control" id="phone" placeholder="+234 XXX XXX XXXX" maxlength="15" required>
+                                <div class="invalid-feedback">Please enter a valid phone number.</div>
                             </div>
 
-                            <!-- Country -->
+                            <!-- country -->
                             <div class="mb-3">
                                 <label for="country" class="form-label">Country</label>
                                 <select class="form-select" id="country" required>
@@ -114,16 +112,13 @@
                                 <div class="invalid-feedback">Please select your country.</div>
                             </div>
 
-                            <!-- Password -->
+                            <!-- password -->
                             <div class="mb-3">
                                 <label for="password" class="form-label">Password</label>
                                 <div>
-                                    <input type="password" class="form-control" id="password"
-                                        placeholder="Create password" required>
+                                    <input type="password" class="form-control" id="password" placeholder="Create password" minlength="8" required>
                                     <div class="invalid-feedback">Password must be at least 8 characters.</div>
-
                                 </div>
-                                <small class="text-muted">At least 8 characters</small>
                             </div>
 
                             <!-- Confirm Password -->
@@ -137,7 +132,6 @@
                                 </div>
                             </div>
 
-                            <!-- Terms -->
                             <div class="mb-4">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="terms" required>
@@ -149,10 +143,9 @@
                                 </div>
                             </div>
 
-                            <!-- Submit Button -->
                             <button type="submit" class="btn btn-teal w-100 mb-3">Create Account</button>
 
-                            <!-- Success Message -->
+                            <!-- success message -->
                             <div class="alert alert-success d-none" id="successMessage">
                                 <i data-lucide="check-circle" style="width: 18px; height: 18px;"></i>
                                 Account created successfully!
@@ -165,18 +158,18 @@
         </div>
     </section>
 
-    <!-- BOOTSTRAP SCRIPT -->
+    <!-- bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>
 
-    <!-- LUCIDE ICONS -->
+    <!-- lucide icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         lucide.createIcons();
     </script>
 
-    <!-- MY SCRIPT -->
+    <!-- custom script -->
     <script src="../scripts/auth.js"></script>
 
 </body>

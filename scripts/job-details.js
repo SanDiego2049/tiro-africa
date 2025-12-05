@@ -40,13 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
       displayError();
     });
 
-  // Global bookmark handler (for inline onclick="toggleBookmark()")
+  // global bookmark handler (for inline onclick="toggleBookmark()")
   window.toggleBookmark = function (id) {
     const effectiveId = id || currentJobId;
     console.log("Bookmark toggled:", effectiveId);
   };
 
-  // Helpers
+  // helpers
   function refreshIcons() {
     if (window.lucide && typeof window.lucide.createIcons === "function") {
       window.lucide.createIcons();
@@ -59,18 +59,18 @@ document.addEventListener("DOMContentLoaded", () => {
       if (el) el.textContent = value;
     };
 
-    // Page title + document title
+    // page title + document title
     setText("page-title", job.title);
     document.title = `${job.title} - TiroAfrica`;
 
-    // Main logo
+    // main logo
     const logo = document.getElementById("job-logo");
     if (logo) {
       logo.src = job.logo;
       logo.alt = `${job.company} logo`;
     }
 
-    // Basic fields
+    // basic fields
     setText("job-title", job.title);
     setText("job-company", job.company);
     setText("job-category", job.category);
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const salaryEl = document.getElementById("job-salary");
     if (salaryEl) salaryEl.textContent = job.salary;
 
-    // Sidebar company logo + name
+    // sidebar company logo + name
     const companyLogoSidebar = document.getElementById("company-logo-sidebar");
     if (companyLogoSidebar) {
       companyLogoSidebar.src = job.logo;
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     setText("company-name", job.company);
 
-    // Skills / tags
+    // skills / tags
     generateSkillsTags(job);
   }
 

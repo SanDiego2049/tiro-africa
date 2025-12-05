@@ -1,0 +1,175 @@
+.yemi-hero {
+    background: linear-gradient(to right, #14b8a6, #06b6d4) !important;
+  }
+  
+  .yemi-dark-bg {
+    background: linear-gradient(to right, #14b8a6, #06b6d4) !important;
+  }
+  
+  /* Navbar - Simple & Clean */
+  .yemi-hero .navbar {
+    background: transparent;
+  }
+  
+  .yemi-hero .nav-link:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+  }
+  
+  .yemi-hero .nav-link.active {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+  }
+  
+  /* Colors */
+  .yemi-teal,
+  .text-teal {
+    color: #14b8a6 !important;
+  }
+  
+  .yemi-teal:hover {
+    color: #0d9488 !important;
+  }
+  
+  /* Icon Circles - Cool & Round */
+  .yemi-circle {
+    width: 50px;
+    height: 50px;
+    background: #14b8a6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s;
+  }
+  
+  .yemi-circle:hover {
+    background: #0d9488;
+    transform: scale(1.1);
+  }
+  
+  /* Form Card - Simple White */
+  .yemi-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-top: 15%;
+  }
+  
+  .yemi-card h5 {
+    color: #14b8a6;
+  }
+  
+  /* Inputs - Clean & Simple */
+  .yemi-input {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    transition: all 0.2s;
+  }
+  
+  .yemi-input:focus {
+    border-color: #14b8a6;
+    box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
+    outline: none;
+  }
+  
+  .yemi-input.is-invalid {
+    border-color: #ef4444;
+    background: #fef2f2;
+  }
+  
+  /* Button - Cool Teal */
+  .yemi-button,
+  .btn-teal {
+    background: #14b8a6;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s;
+  }
+  
+  .yemi-button:hover,
+  .btn-teal:hover {
+    background: #0d9488;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3);
+    color: white;
+  }
+  
+  /* Contact Cards - Simple */
+  .contact-details > div {
+    padding: 1.25rem;
+    background: #f9fafb;
+    border-radius: 12px;
+    border-left: 3px solid #14b8a6;
+    transition: all 0.2s;
+  }
+  
+  .contact-details > div:hover {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* Map - Simple Frame */
+  .map-container {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer - Simple Dark */
+  .yemi-foot {
+    background: #1f2937;
+  }
+  
+  .yemi-foot .hover-link:hover {
+    color: #14b8a6 !important;
+  }
+  
+  .yemi-foot .form-control {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: white;
+  }
+  
+  .yemi-foot .form-control:focus {
+    border-color: #14b8a6;
+    outline: none;
+  }
+  
+  /* Alert - Simple */
+  .alert-success {
+    background: #d1fae5;
+    border: none;
+    border-left: 3px solid #10b981;
+    border-radius: 8px;
+    color: #065f46;
+  }
+  
+  /* Validation */
+  .invalid-feedback {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .yemi-card {
+      margin-top: 2rem;
+    }
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  *:focus-visible {
+    outline: 2px solid #14b8a6;
+    outline-offset: 2px;
+  }
