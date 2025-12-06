@@ -1,46 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiro Africa - Find Your Dream Job Today</title>
-
-    <!-- google site verification -->
-    <meta name="google-site-verification" content="Zr6ypk_AAIMDaHxgIMmbqHzxs12yLjZLAz99eb2UdSM" />
-
-    <!-- bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-    <!-- google fonts -->
+    <meta name="google-site-verification" content="Zr6ypk_AAIMDaHxgIMmbqHzxs12yLjZLAz99eb2UdSM">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- my css -->
     <link rel="stylesheet" href="./styles/styles.css">
-
     <link rel="shortcut icon" href="./assets/job-logo.png" type="image/png">
 </head>
-
 <body>
     <header class="bg-gradient-custom">
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top">
             <div class="container-fluid px-3 px-md-4">
-                <a class="navbar-brand fw-bold fs-4" href="/index.html">
-                    <i data-lucide="briefcase" style="width: 24px; height: 24px;"></i>
-                    TiroAfrica
+                <a class="navbar-brand fw-bold fs-4" href="index.html">
+                    <i data-lucide="briefcase" style="width: 24px; height: 24px;"></i> TiroAfrica
                 </a>
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
                         <li class="nav-item">
-                            <a class="nav-link active px-3 py-2 bg-white fw-bold bg-opacity-10 rounded"
-                                aria-current="page" href="/index.html">Home</a>
+                            <a class="nav-link active px-3 py-2 bg-white fw-bold bg-opacity-10 rounded" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-3 py-2" href="./pages/job-board.html">Jobs</a>
@@ -60,93 +43,123 @@
             </div>
         </nav>
 
-        <!-- hero section -->
-        <section class="container-fluid py-4 py-md-5 my-2 my-md-4 px-3 px-md-4">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-10 col-xl-8 text-center text-white">
-                    <h1 class="display-1 fw-bold mb-3 mb-md-4">Welcome to TiroAfrica</h1>
-                    <p class="lead mb-4 mb-md-5 fs-6 fs-md-5 opacity-90 px-2 px-md-0">Connecting Talent with
-                        Opportunity: Your Gateway to Career Success</p>
-                    <div class="row mt-5">
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <div class="d-flex align-items-center justify-content-center gap-3">
-                                <div class="bg-white bg-opacity-10 rounded-circle p-3">
-                                    <i data-lucide="briefcase" style="width: 32px; height: 32px;"></i>
-                                </div>
-                                <div class="text-start">
-                                    <h3 class="fw-bold mb-0">25,850</h3>
-                                    <p class="mb-0 opacity-90">Jobs</p>
-                                </div>
+        <section class="hero-modern position-relative py-5">
+            <div class="container py-md-5">
+                <div class="row align-items-center min-vh-70">
+                    <div class="col-lg-6 text-white mb-5 mb-lg-0">
+                        <p class="hero-tag text-uppercase fw-semibold mb-3 tracking-wide">
+                            <i data-lucide="sparkles" class="me-2" style="width: 18px; height: 18px;"></i> We Are Tiro Africa
+                        </p>
+                        <h1 class="hero-main-title display-3 fw-bold mb-4 lh-1">Connecting Africa's Best With The World</h1>
+                        <p class="hero-description lead mb-5 opacity-90">
+                            We bridge the gap between top-tier African professionals and international companies seeking diverse, cost-effective, highly skilled talent.
+                        </p>
+                        <div class="d-flex flex-column flex-sm-row gap-3 mb-5">
+                            <a href="./pages/contact-us.html" class="btn btn-light btn-lg px-5 py-3 fw-semibold shadow-lg">
+                                <i data-lucide="briefcase" class="me-2" style="width: 20px; height: 20px;"></i> Hire A Talent
+                            </a>
+                            <a href="./pages/register.html" class="btn btn-outline-light btn-lg px-5 py-3 fw-semibold">Careers</a>
+                        </div>
+                        <div class="row g-4 mt-3">
+                            <div class="col-4">
+                                <h3 class="fw-bold mb-1">25K+</h3>
+                                <p class="small mb-0 opacity-75">Jobs</p>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="fw-bold mb-1">10K+</h3>
+                                <p class="small mb-0 opacity-75">Candidates</p>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="fw-bold mb-1">18K+</h3>
+                                <p class="small mb-0 opacity-75">Companies</p>
                             </div>
                         </div>
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <div class="d-flex align-items-center justify-content-center gap-3">
-                                <div class="bg-white bg-opacity-10 rounded-circle p-3">
-                                    <i data-lucide="users" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-image-container position-relative">
+                            <div class="hero-main-image">
+                                <img src="./assets/africantalent4.avif" alt="Professional" class="img-fluid rounded-4 shadow-lg">
+                            </div>
+                            <div class="floating-circle circle-1 position-absolute">
+                                <div class="bg-white rounded-circle p-1 shadow-lg">
+                                    <img src="./assets/recruiter.avif" alt="Recruiter" class="rounded-circle" style="width: 80px; height: 80px; object-fit: cover;">
                                 </div>
-                                <div class="text-start">
-                                    <h3 class="fw-bold mb-0">10,250</h3>
-                                    <p class="mb-0 opacity-90">Candidates</p>
+                                <div class="circle-label bg-white rounded-pill px-3 py-1 shadow-sm mt-2">
+                                    <small class="fw-semibold text-teal">Recruiter</small>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="d-flex align-items-center justify-content-center gap-3">
-                                <div class="bg-white bg-opacity-10 rounded-circle p-3">
-                                    <i data-lucide="building" style="width: 32px; height: 32px;"></i>
+                            <div class="floating-stats position-absolute bg-white rounded-4 shadow-lg p-4">
+                                <p class="small text-muted mb-1">Success Rate</p>
+                                <h2 class="fw-bold text-teal mb-2">98%</h2>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar bg-teal" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <div class="text-start">
-                                    <h3 class="fw-bold mb-0">18,400</h3>
-                                    <p class="mb-0 opacity-90">Companies</p>
+                                <div class="mt-2">
+                                    <svg width="100" height="30" viewBox="0 0 100 30">
+                                        <path d="M 0 20 Q 25 10, 50 15 T 100 5" stroke="#fbbf24" stroke-width="2" fill="none"/>
+                                    </svg>
                                 </div>
                             </div>
+                            <div class="hero-decoration-circle deco-1"></div>
+                            <div class="hero-decoration-circle deco-2"></div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="hero-bg-decoration decoration-1"></div>
+            <div class="hero-bg-decoration decoration-2"></div>
         </section>
     </header>
 
-    <!-- company logo section -->
-    <section class="bg-dark py-4">
-        <div class="container-fluid">
-            <div class="d-flex justify-content-evenly align-items-center flex-wrap gap-4">
-                <div class="d-flex align-items-center gap-2 text-white opacity-75">
-                    <i data-lucide="radio" style="width: 32px; height: 32px;"></i>
-                    <span class="fs-4 fw-semibold">Spotify</span>
+    <section class="companies-section bg-white py-4 py-md-5 border-top">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="text-muted small text-uppercase fw-semibold mb-3 tracking-wide">Trusted By Leading Companies</h2>
+            </div>
+            <div class="row align-items-center justify-content-center g-4 g-md-5">
+                <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="company-logo-item">
+                        <img src="./assets/amazon.png" alt="Amazon" class="company-icon">
+                        <p class="company-name mb-0">Amazon</p>
+                    </div>
                 </div>
-                <div class="d-flex align-items-center gap-2 text-white opacity-75">
-                    <i data-lucide="hash" style="width: 32px; height: 32px;"></i>
-                    <span class="fs-4 fw-semibold">slack</span>
+                <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="company-logo-item">
+                        <img src="./assets/google.png" alt="Google" class="company-icon">
+                        <p class="company-name mb-0">Google</p>
+                    </div>
                 </div>
-                <div class="d-flex align-items-center gap-2 text-white opacity-75">
-                    <i data-lucide="box" style="width: 32px; height: 32px;"></i>
-                    <span class="fs-4 fw-semibold">Adobe</span>
+                <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="company-logo-item">
+                        <img src="./assets/linkedin.png" alt="LinkedIn" class="company-icon">
+                        <p class="company-name mb-0">LinkedIn</p>
+                    </div>
                 </div>
-                <div class="d-flex align-items-center gap-2 text-white opacity-75">
-                    <i data-lucide="layers" style="width: 32px; height: 32px;"></i>
-                    <span class="fs-4 fw-semibold">asana</span>
+                <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="company-logo-item">
+                        <img src="./assets/slack.png" alt="Slack" class="company-icon">
+                        <p class="company-name mb-0">Slack</p>
+                    </div>
                 </div>
-                <div class="d-flex align-items-center gap-2 text-white opacity-75">
-                    <i data-lucide="trending-up" style="width: 32px; height: 32px;"></i>
-                    <span class="fs-4 fw-semibold">Linear</span>
+                <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="company-logo-item">
+                        <img src="./assets/spotify.png" alt="Spotify" class="company-icon">
+                        <p class="company-name mb-0">Spotify</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- recent jobs section -->
     <section class="py-5 bg-white" id="jobs">
         <div class="container">
             <div class="d-flex justify-content-between align-items-start mb-4">
                 <div>
                     <h2 class="fw-bold mb-2">Recent Jobs Available</h2>
-                    <p class="text-muted">At eu lobortis pretium tincidunt amet lacus ut senean aliquet...</p>
+                    <p class="text-muted">Discover fresh opportunities updated daily.</p>
                 </div>
                 <a href="./pages/job-board.html" class="text-teal text-decoration-none fw-semibold d-none d-md-block">View all</a>                  
             </div>
-
-            <!-- job card -->
             <div class="job-card p-3 p-md-4 mb-3 mb-md-4 rounded shadow-sm bg-white">
                 <div class="d-flex justify-content-between align-items-start mb-3">
                     <span class="badge bg-light text-dark small">10 min ago</span>
@@ -154,37 +167,30 @@
                         <i data-lucide="bookmark" style="width: 20px; height: 20px;"></i>
                     </button>
                 </div>
-
                 <div class="d-flex flex-column flex-md-row justify-content-between gap-3">
                     <div class="flex-grow-1">
                         <div class="d-flex gap-2 mb-2">
-                            <img width="40" height="40" src="./assets/job-logo.png" alt="logo for company"
-                                class="rounded flex-shrink-0">
+                            <img width="40" height="40" src="./assets/job-logo.png" alt="logo for company" class="rounded flex-shrink-0">
                             <div>
                                 <h5 class="fw-bold mb-1 fs-6 fs-md-5">Forward Security Director</h5>
                                 <p class="text-muted small mb-0">Bauch, Schuppe and Schulist Co</p>
                             </div>
                         </div>
-
                         <div class="d-flex flex-wrap gap-2 gap-md-3 mt-3">
                             <span class="small text-muted text-nowrap">
-                                <i data-lucide="briefcase" class="me-1" style="width: 16px; height: 16px;"></i> Hotels &
-                                Tourism
+                                <i data-lucide="briefcase" class="me-1" style="width: 16px; height: 16px;"></i> Hotels & Tourism
                             </span>
                             <span class="small text-muted text-nowrap">
                                 <i data-lucide="clock" class="me-1" style="width: 16px; height: 16px;"></i> Full time
                             </span>
                             <span class="small text-muted text-nowrap">
-                                <i data-lucide="wallet" class="me-1"
-                                    style="width: 16px; height: 16px;"></i>$40000-$42000
+                                <i data-lucide="wallet" class="me-1" style="width: 16px; height: 16px;"></i>$40000-$42000
                             </span>
                             <span class="small text-muted text-nowrap">
-                                <i data-lucide="map-pin" class="me-1" style="width: 16px; height: 16px;"></i> New-York,
-                                USA
+                                <i data-lucide="map-pin" class="me-1" style="width: 16px; height: 16px;"></i> New-York, USA
                             </span>
                         </div>
                     </div>
-
                     <div class="flex-shrink-0 d-flex align-items-start">
                         <button class="btn btn-teal px-3 px-md-4 w-100 w-md-auto text-nowrap">
                             Job Details
@@ -195,20 +201,16 @@
         </div>
     </section>
 
-    <!-- category section -->
     <section class="py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="fw-bold mb-2">Browse by Category</h2>
-                <p class="text-muted">At eu lobortis pretium tincidunt amet lacus ut senean aliquet. Blandit a massa
-                    elementum id scal...</p>
+                <p class="text-muted">Find jobs in your field of expertise across various industries.</p>
             </div>
-
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="category-card h-100 text-center p-4">
-                        <div class="mx-auto mb-3 bg-light-teal rounded-circle d-flex align-items-center justify-content-center"
-                            style="width: 70px; height: 70px;">
+                        <div class="mx-auto mb-3 bg-light-teal rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
                             <i data-lucide="sprout" class="text-teal" style="width: 32px; height: 32px;"></i>
                         </div>
                         <h5 class="fw-semibold mb-2">Agriculture</h5>
@@ -217,8 +219,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="category-card h-100 text-center p-4">
-                        <div class="mx-auto mb-3 bg-light-teal rounded-circle d-flex align-items-center justify-content-center"
-                            style="width: 70px; height: 70px;">
+                        <div class="mx-auto mb-3 bg-light-teal rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
                             <i data-lucide="factory" class="text-teal" style="width: 32px; height: 32px;"></i>
                         </div>
                         <h5 class="fw-semibold mb-2">Metal Production</h5>
@@ -227,8 +228,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="category-card h-100 text-center p-4">
-                        <div class="mx-auto mb-3 bg-light-teal rounded-circle d-flex align-items-center justify-content-center"
-                            style="width: 70px; height: 70px;">
+                        <div class="mx-auto mb-3 bg-light-teal rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
                             <i data-lucide="shopping-bag" class="text-teal" style="width: 32px; height: 32px;"></i>
                         </div>
                         <h5 class="fw-semibold mb-2">Commerce</h5>
@@ -237,8 +237,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="category-card h-100 text-center p-4">
-                        <div class="mx-auto mb-3 bg-light-teal rounded-circle d-flex align-items-center justify-content-center"
-                            style="width: 70px; height: 70px;">
+                        <div class="mx-auto mb-3 bg-light-teal rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
                             <i data-lucide="hard-hat" class="text-teal" style="width: 32px; height: 32px;"></i>
                         </div>
                         <h5 class="fw-semibold mb-2">Construction</h5>
@@ -247,8 +246,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="category-card h-100 text-center p-4">
-                        <div class="mx-auto mb-3 bg-light-teal rounded-circle d-flex align-items-center justify-content-center"
-                            style="width: 70px; height: 70px;">
+                        <div class="mx-auto mb-3 bg-light-teal rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
                             <i data-lucide="hotel" class="text-teal" style="width: 32px; height: 32px;"></i>
                         </div>
                         <h5 class="fw-semibold mb-2">Hotels & Tourism</h5>
@@ -257,8 +255,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="category-card h-100 text-center p-4">
-                        <div class="mx-auto mb-3 bg-light-teal rounded-circle d-flex align-items-center justify-content-center"
-                            style="width: 70px; height: 70px;">
+                        <div class="mx-auto mb-3 bg-light-teal rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
                             <i data-lucide="graduation-cap" class="text-teal" style="width: 32px; height: 32px;"></i>
                         </div>
                         <h5 class="fw-semibold mb-2">Education</h5>
@@ -267,8 +264,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="category-card h-100 text-center p-4">
-                        <div class="mx-auto mb-3 bg-light-teal rounded-circle d-flex align-items-center justify-content-center"
-                            style="width: 70px; height: 70px;">
+                        <div class="mx-auto mb-3 bg-light-teal rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
                             <i data-lucide="coins" class="text-teal" style="width: 32px; height: 32px;"></i>
                         </div>
                         <h5 class="fw-semibold mb-2">Financial Services</h5>
@@ -277,8 +273,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="category-card h-100 text-center p-4">
-                        <div class="mx-auto mb-3 bg-light-teal rounded-circle d-flex align-items-center justify-content-center"
-                            style="width: 70px; height: 70px;">
+                        <div class="mx-auto mb-3 bg-light-teal rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
                             <i data-lucide="truck" class="text-teal" style="width: 32px; height: 32px;"></i>
                         </div>
                         <h5 class="fw-semibold mb-2">Transport</h5>
@@ -289,157 +284,171 @@
         </div>
     </section>
 
-    <section class="py-5 bg-white" id="about">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="./assets/team-1.jfif" alt="Team Meeting" class="img-fluid rounded shadow">
+    <section class="about-section py-4 py-md-5 bg-light" id="about">
+        <div class="container py-2 py-md-5">
+            <div class="row align-items-center g-3 g-lg-5 mb-4 mb-md-5">
+                <div class="col-lg-6 order-2 order-lg-1 mb-3 mb-lg-0">
+                    <div class="about-image-wrapper position-relative">
+                        <div class="about-image-bg"></div>
+                        <img src="./assets/team.avif" alt="Team Collaboration" class="img-fluid rounded-4 shadow-lg position-relative">
+                        <div class="success-badge position-absolute bg-white rounded-4 shadow-lg p-3 p-md-4">
+                            <div class="d-flex align-items-center gap-2 gap-md-3">
+                                <div class="success-icon bg-light-teal rounded-circle p-2 p-md-3">
+                                    <i data-lucide="trophy" class="text-teal" style="width: 24px; height: 24px;"></i>
+                                </div>
+                                <div>
+                                    <h4 class="mb-0 fw-bold text-teal">98%</h4>
+                                    <p class="mb-0 small text-muted">Success Rate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <h2 class="fw-bold mb-3">Good Life Begins With A Good Company</h2>
-                    <p class="text-muted mb-4">
-                        Ultricies purus dolor viverra mi lacerat at cursus justo. Ultrices purus diam egestas arnet
-                        faucibus tempor blandit. Elit velit mauris aliquam etiamm diam. Leo sagittis consectetur diam
-                        viverra senean. Vulputate prasent congue faucibus in euismod feugiat auctor vel volutpat.
-                    </p>
-                    <div class="d-flex gap-3 flex-wrap">
-                        <a href="#jobs" class="btn btn-teal px-4">Search Job</a>
-                        <a href="#about" class="btn btn-outline-secondary px-4">Learn more</a>
+                <div class="col-lg-6 order-1 order-lg-2 px-3 px-md-4">
+                    <div class="about-content">
+                        <div class="d-inline-flex align-items-center gap-2 bg-light-teal rounded-pill px-3 py-2 mb-3">
+                            <i data-lucide="sparkles" class="text-teal" style="width: 16px; height: 16px;"></i>
+                            <span class="small fw-semibold text-teal">Why Choose Us</span>
+                        </div>
+                        <h2 class="display-5 fw-bold mb-3 mb-md-4 lh-sm">Good Life Begins With A Good Company</h2>
+                        <p class="text-muted mb-3 mb-md-4 lh-lg">
+                            Join Africa's leading companies and unlock opportunities for growth, development, and career success. Your dream job is closer than you think.
+                        </p>
+                        <div class="features-list mb-3 mb-md-4">
+                            <div class="feature-item d-flex align-items-start gap-2 gap-md-3 mb-3">
+                                <div class="feature-icon bg-light-teal rounded-circle p-2 flex-shrink-0">
+                                    <i data-lucide="check" class="text-teal" style="width: 18px; height: 18px;"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-semibold mb-1">Verified Companies</h6>
+                                    <p class="text-muted small mb-0">All employers are thoroughly vetted and verified</p>
+                                </div>
+                            </div>
+                            <div class="feature-item d-flex align-items-start gap-2 gap-md-3 mb-3">
+                                <div class="feature-icon bg-light-teal rounded-circle p-2 flex-shrink-0">
+                                    <i data-lucide="check" class="text-teal" style="width: 18px; height: 18px;"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-semibold mb-1">Career Growth</h6>
+                                    <p class="text-muted small mb-0">Find roles that match your career aspirations</p>
+                                </div>
+                            </div>
+                            <div class="feature-item d-flex align-items-start gap-2 gap-md-3">
+                                <div class="feature-icon bg-light-teal rounded-circle p-2 flex-shrink-0">
+                                    <i data-lucide="check" class="text-teal" style="width: 18px; height: 18px;"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-semibold mb-1">Expert Support</h6>
+                                    <p class="text-muted small mb-0">Get guidance throughout your job search journey</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2 gap-md-3 flex-wrap">
+                            <a href="#jobs" class="btn btn-teal btn-lg px-3 px-md-4 py-2 py-md-3">
+                                <i data-lucide="search" class="me-2" style="width: 18px; height: 18px;"></i>
+                                Search Job
+                            </a>
+                            <a href="./pages/about-us.html" class="btn btn-outline-secondary btn-lg px-3 px-md-4 py-2 py-md-3">Learn more</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- stats row -->
-            <div class="row mt-5">
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h3 class="text-teal fw-bold">12k+</h3>
-                    <h5 class="fw-semibold mb-2">Clients worldwide</h5>
-                    <p class="text-muted small">At eu lobortis pretium tincidunt amet lacus ut senean aliquet. Blandit a
-                        massa elementum...</p>
-                </div>
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h3 class="text-teal fw-bold">20k+</h3>
-                    <h5 class="fw-semibold mb-2">Active resume</h5>
-                    <p class="text-muted small">At eu lobortis pretium tincidunt amet lacus ut senean aliquet. Blandit a
-                        massa elementum...</p>
+            <div class="row g-3 g-md-4 mt-2 mt-md-4">
+                <div class="col-md-4">
+                    <div class="stat-card bg-white rounded-4 p-3 p-md-4 h-100 shadow-sm">
+                        <div class="d-flex align-items-center gap-2 gap-md-3 mb-2 mb-md-3">
+                            <div class="stat-icon-box bg-light-teal rounded-3 p-2 p-md-3">
+                                <i data-lucide="users" class="text-teal" style="width: 24px; height: 24px;"></i>
+                            </div>
+                            <h3 class="stat-number text-teal fw-bold mb-0">12k+</h3>
+                        </div>
+                        <h5 class="fw-semibold mb-2">Clients worldwide</h5>
+                        <p class="text-muted small mb-0">Professionals who have found their dream careers through our platform.</p>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <h3 class="text-teal fw-bold">18k+</h3>
-                    <h5 class="fw-semibold mb-2">Companies</h5>
-                    <p class="text-muted small">At eu lobortis pretium tincidunt amet lacus ut senean aliquet. Blandit a
-                        massa elementum...</p>
+                    <div class="stat-card bg-white rounded-4 p-3 p-md-4 h-100 shadow-sm">
+                        <div class="d-flex align-items-center gap-2 gap-md-3 mb-2 mb-md-3">
+                            <div class="stat-icon-box bg-light-teal rounded-3 p-2 p-md-3">
+                                <i data-lucide="file-text" class="text-teal" style="width: 24px; height: 24px;"></i>
+                            </div>
+                            <h3 class="stat-number text-teal fw-bold mb-0">20k+</h3>
+                        </div>
+                        <h5 class="fw-semibold mb-2">Active resume</h5>
+                        <p class="text-muted small mb-0">Qualified candidates ready to join your team right now.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-card bg-white rounded-4 p-3 p-md-4 h-100 shadow-sm">
+                        <div class="d-flex align-items-center gap-2 gap-md-3 mb-2 mb-md-3">
+                            <div class="stat-icon-box bg-light-teal rounded-3 p-2 p-md-3">
+                                <i data-lucide="building-2" class="text-teal" style="width: 24px; height: 24px;"></i>
+                            </div>
+                            <h3 class="stat-number text-teal fw-bold mb-0">18k+</h3>
+                        </div>
+                        <h5 class="fw-semibold mb-2">Companies</h5>
+                        <p class="text-muted small mb-0">Trusted employers hiring across multiple industries and sectors.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- footer -->
     <footer class="footer bg-dark text-white py-5 mt-5">
         <div class="container">
             <div class="row g-4">
-
-                <!-- brand section -->
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="d-flex align-items-center mb-3">
                         <i data-lucide="briefcase" class="me-2" style="width: 24px; height: 24px;"></i>
                         <h5 class="mb-0 fw-bold">TiroAfrica</h5>
                     </div>
-                    <p class="mb-0 small">TiroAfrica is a platform that connects job seekers with employers.</p>
+                    <p class="mb-0 small">Tiro Africa is a platform that connects job seekers with employers.</p>
                 </div>
-
-                <!-- company links -->
                 <div class="col-6 col-md-6 col-lg-3">
                     <h6 class="fw-bold mb-3">Company</h6>
                     <ul class="list-unstyled">
-                        <li class="mb-2">
-                            <a href="#" class="text-white-50 text-decoration-none small hover-link">About Us</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="text-white-50 text-decoration-none small hover-link">Our Team</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="text-white-50 text-decoration-none small hover-link">Partners</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="text-white-50 text-decoration-none small hover-link">For Candidates</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="text-white-50 text-decoration-none small hover-link">For Employers</a>
-                        </li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small hover-link">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small hover-link">Our Team</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small hover-link">Partners</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small hover-link">For Candidates</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small hover-link">For Employers</a></li>
                     </ul>
                 </div>
-
-                <!-- job categories -->
                 <div class="col-6 col-md-6 col-lg-3">
                     <h6 class="fw-bold mb-3">Job Categories</h6>
                     <ul class="list-unstyled">
-                        <li class="mb-2">
-                            <a href="#" class="text-white-50 text-decoration-none small hover-link">Commerce</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="text-white-50 text-decoration-none small hover-link">Hotels & Tourism</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="text-white-50 text-decoration-none small hover-link">Technology</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="text-white-50 text-decoration-none small hover-link">Education</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="text-white-50 text-decoration-none small hover-link">Healthcare</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="text-white-50 text-decoration-none small hover-link">Agriculture</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="text-white-50 text-decoration-none small hover-link">Construction</a>
-                        </li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small hover-link">Commerce</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small hover-link">Hotels & Tourism</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small hover-link">Technology</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small hover-link">Education</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small hover-link">Healthcare</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small hover-link">Agriculture</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small hover-link">Construction</a></li>
                     </ul>
                 </div>
-
-                <!-- newsletter -->
                 <div class="col-12 col-md-6 col-lg-3">
                     <h6 class="fw-bold mb-3">Newsletter</h6>
-                    <p class="text-white-50 small mb-3">
-                        Subscribe to our newsletter to get the latest job updates and career advice.
-                    </p>
+                    <p class="text-white-50 small mb-3">Subscribe to our newsletter to get the latest job updates and career advice.</p>
                     <div class="mb-3">
-                        <input type="email" class="form-control bg-transparent text-white border-secondary"
-                            placeholder="Email Address">
+                        <input type="email" class="form-control bg-transparent text-white border-secondary" placeholder="Email Address">
                     </div>
                     <button class="btn btn-teal w-100 fw-semibold">Subscribe now</button>
                 </div>
-
             </div>
-
-            <!-- bottom bar -->
             <hr class="border-secondary my-4">
-
             <div class="row align-items-center">
                 <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <p class="mb-0 small text-white-50">
-                        © Copyright 2025 TiroAfrica. All Rights Reserved.
-                    </p>
+                    <p class="mb-0 small text-white-50">© Copyright 2025 Tiro Africa. All Rights Reserved.</p>
                 </div>
                 <div class="col-12 col-md-6 text-center text-md-end">
                     <a href="#" class="text-white text-decoration-none small me-3 hover-link">Privacy Policy</a>
                     <a href="#" class="text-white text-decoration-none small hover-link">Terms & Conditions</a>
                 </div>
             </div>
-
         </div>
     </footer>
-
-    <!-- bootstrap scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-        </script>
-
-    <!-- lucide icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-        lucide.createIcons();
-    </script>
+    <script>lucide.createIcons();</script>
 </body>
-
 </html>
