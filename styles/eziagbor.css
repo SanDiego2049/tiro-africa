@@ -18,16 +18,11 @@
   background-color: #f0eeff;
 }
 
-/* Header gradient with purple shades */
+/* Header */
 .bg-gradient-eziagbor {
   background: linear-gradient(135deg, #4a3aff 0%, #ab7ef1 50%, #867cff 100%);
   position: relative;
   overflow: hidden;
-}
-
-/* Footer hover links */
-.hover-link:hover {
-  color: #6b5fff !important;
 }
 
 /* Contact page */
@@ -52,6 +47,11 @@
 .eziagbor-form-control:focus {
   border-color: #4a3aff;
   box-shadow: 0 0 0 0.2rem rgba(74, 58, 255, 0.1);
+}
+
+/* Footer  */
+.hover-link:hover {
+  color: #6b5fff !important;
 }
 
 .footer input.form-control:focus {
