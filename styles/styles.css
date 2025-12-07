@@ -44,7 +44,7 @@ h1 {
   background-color: #EBF5F4;
 }
 
-/* RESPONSIVE ICONS - Updated */
+/* responsive icons */
 .input-group-text i {
   width: 16px;
   height: 16px;
@@ -127,6 +127,23 @@ small i {
   height: 18px;
 }
 
+.bookmark {
+  color: #6c757d;
+  /* bootstrap's default muted icon color */
+  transition: color 0.2s ease, background-color 0.2s ease;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+/* when active (clicked/bookmarked) */
+.bookmark.active {
+  color: #fff;
+  /* icon turns white */
+  background-color: #309689;
+  /* your requested colour */
+}
+
+
 @media (min-width: 768px) {
   .btn-link i {
     width: 20px;
@@ -188,9 +205,7 @@ small i {
   z-index: 10;
 }
 
-/* ============================================
-   NEW HERO SECTION STYLES
-   ============================================ */
+/* hero section*/
 
 /* Header background gradient */
 .bg-gradient-custom {
@@ -467,14 +482,8 @@ small i {
   }
 }
 
-/* ============================================
-   END NEW HERO SECTION
-   ============================================ */
 
-
-/* ============================================
-   COMPANIES SECTION STYLES
-   ============================================ */
+/* companies */
 
 .companies-section {
   background-color: #f8f9fa;
@@ -508,9 +517,7 @@ small i {
   }
 }
 
-/* ============================================
-   END COMPANIES SECTION
-   ============================================ */
+/* footer */
 
 /* footer styles */
 .hover-link {

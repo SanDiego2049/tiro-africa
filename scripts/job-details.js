@@ -12,44 +12,30 @@ document.addEventListener("DOMContentLoaded", () => {
   const relatedJobsContainer = document.getElementById("related-jobs");
   let currentJobId = jobId;
 
-  // Fetch jobs once
-  fetch("../data/jobs-posting.json")
-    .then((res) => {
-      if (!res.ok) throw new Error("Network response not ok");
-      return res.json();
-    })
-    .then((jobs) => {
-      if (!Array.isArray(jobs) || jobs.length === 0) {
-        displayError();
-        return;
-      }
+  const jobs = jobsData;
 
-      const currentJob = jobs.find((j) => j.id === jobId);
-      if (!currentJob) {
-        displayError();
-        return;
-      }
+  if (!Array.isArray(jobs) || jobs.length === 0) {
+    console.error("Jobs dataset not found. Ensure jobs-posting.js is loaded.");
+    displayError();
+    return;
+  }
 
-      currentJobId = currentJob.id;
-      displayJobDetails(currentJob);
-      renderRelatedJobs(currentJob, jobs);
-      refreshIcons();
-    })
-    .catch((err) => {
-      console.error("Failed to load jobs:", err);
-      displayError();
-    });
+  const currentJob = jobs.find((j) => j.id === jobId);
+  if (!currentJob) {
+    displayError();
+    return;
+  }
 
-  // global bookmark handler (for inline onclick="toggleBookmark()")
-  window.toggleBookmark = function (id) {
-    const effectiveId = id || currentJobId;
-    console.log("Bookmark toggled:", effectiveId);
-  };
+  currentJobId = currentJob.id;
+  displayJobDetails(currentJob);
+  renderRelatedJobs(currentJob, jobs);
+  refreshIcons();
+  applyBookmarkStyles();
 
   // helpers
   function refreshIcons() {
-    if (window.lucide && typeof window.lucide.createIcons === "function") {
-      window.lucide.createIcons();
+    if (lucide && typeof lucide.createIcons === "function") {
+      lucide.createIcons();
     }
   }
 
