@@ -150,7 +150,7 @@ small i {
     width: 60px;
     height: 60px;
   }
-  
+
   .category-icon-wrapper i {
     width: 28px;
     height: 28px;
@@ -162,7 +162,7 @@ small i {
     width: 70px;
     height: 70px;
   }
-  
+
   .category-icon-wrapper i {
     width: 32px;
     height: 32px;
@@ -379,6 +379,7 @@ small i {
   0%, 100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }
@@ -389,6 +390,7 @@ small i {
     transform: scale(1);
     opacity: 0.5;
   }
+
   50% {
     transform: scale(1.1);
     opacity: 0.3;
@@ -399,6 +401,7 @@ small i {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -410,20 +413,20 @@ small i {
     min-height: auto;
     padding: 3rem 0;
   }
-  
+
   .min-vh-70 {
     min-height: auto;
   }
-  
+
   .hero-image-container {
     padding: 1rem;
     margin-top: 3rem;
   }
-  
+
   .floating-circle {
     display: none;
   }
-  
+
   .floating-stats {
     position: relative;
     left: 0;
@@ -431,7 +434,7 @@ small i {
     margin: 2rem auto;
     max-width: 280px;
   }
-  
+
   .hero-main-image img {
     max-width: 100%;
   }
@@ -441,24 +444,24 @@ small i {
   .hero-main-title {
     font-size: 2rem;
   }
-  
+
   .hero-description {
     font-size: 1rem;
   }
-  
+
   .btn-lg {
     padding: 0.75rem 2rem;
     font-size: 1rem;
   }
-  
+
   .hero-tag {
     font-size: 0.75rem;
   }
-  
+
   .floating-stats {
     padding: 1.5rem;
   }
-  
+
   .hero-decoration-circle {
     display: none;
   }
@@ -598,6 +601,7 @@ aside .form-check-input {
   0%, 100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
@@ -653,166 +657,168 @@ aside .form-check-input {
     left: 10px;
     padding: 1rem !important;
   }
-  
+
   .success-icon {
     width: 50px;
     height: 50px;
   }
-  
+
   .success-badge h4 {
     font-size: 1.25rem;
   }
-  
+
   .about-image-bg {
     display: none;
   }
 }
 
 @media (max-width: 767px) {
+
   /* Hero Section Mobile */
   h1 {
     font-size: 2.5rem !important;
     line-height: 1.2;
   }
-  
+
   .lead {
     font-size: 1rem !important;
   }
-  
+
   /* Stats in Hero - Better Mobile Layout */
   .row.mt-5 .col-md-4 {
     margin-bottom: 1.5rem !important;
   }
-  
+
   .row.mt-5 .d-flex {
     flex-direction: column !important;
     text-align: center !important;
   }
-  
+
   .row.mt-5 .text-start {
     text-align: center !important;
   }
-  
+
   .row.mt-5 h3 {
     font-size: 1.75rem;
   }
-  
+
   .row.mt-5 p {
     font-size: 0.875rem;
   }
-  
+
   /* About Section Mobile */
   .display-5 {
     font-size: 1.75rem !important;
   }
-  
+
   .about-content .lead,
   .about-content p {
     font-size: 0.95rem !important;
   }
-  
+
   .features-list {
     margin-bottom: 2rem !important;
   }
-  
+
   .feature-item h6 {
     font-size: 0.95rem;
   }
-  
+
   .feature-item p {
     font-size: 0.85rem;
   }
-  
+
   /* Buttons Mobile */
   .btn-lg {
     padding: 0.75rem 1.5rem !important;
     font-size: 0.95rem !important;
   }
-  
+
   /* Stats Cards Mobile */
   .stat-number {
     font-size: 1.5rem;
   }
-  
+
   .stat-icon-box {
     width: 50px;
     height: 50px;
   }
-  
+
   .stat-icon-box i {
     width: 22px !important;
     height: 22px !important;
   }
-  
+
   .stat-card h5 {
     font-size: 1rem;
   }
-  
+
   .stat-card p {
     font-size: 0.85rem;
   }
-  
+
   /* Success Badge Mobile */
   .success-badge {
     padding: 0.75rem !important;
   }
-  
+
   .success-icon {
     width: 40px;
     height: 40px;
     padding: 0.5rem !important;
   }
-  
+
   .success-icon i {
     width: 20px !important;
     height: 20px !important;
   }
-  
+
   .success-badge h4 {
     font-size: 1.1rem;
   }
-  
+
   .success-badge p {
     font-size: 0.75rem;
   }
 }
 
 @media (max-width: 575px) {
+
   /* Extra Small Mobile */
   h1 {
     font-size: 2rem !important;
   }
-  
+
   .display-5 {
     font-size: 1.5rem !important;
   }
-  
+
   .row.mt-5 h3 {
     font-size: 1.5rem;
   }
-  
+
   /* Hero Stats - Full Width Cards */
-  .row.mt-5 > div {
+  .row.mt-5>div {
     width: 100%;
     margin-bottom: 1rem !important;
   }
-  
+
   .row.mt-5 .bg-white.bg-opacity-10 {
     width: 60px;
     height: 60px;
     margin: 0 auto 0.5rem auto;
   }
-  
+
   /* About Section */
   .about-content {
     padding: 0 0.5rem;
   }
-  
+
   .feature-icon {
     width: 35px;
     height: 35px;
   }
-  
+
   /* Stat Cards - More Compact */
   .stat-card {
     padding: 1.25rem !important;
@@ -1019,6 +1025,20 @@ aside .form-check-input {
     overflow-x: hidden;
     padding-right: 5px;
   }
+
+  .sidebar-content::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .sidebar-content::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  .sidebar-content::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+  }
+
 }
 
 /* tablet */
