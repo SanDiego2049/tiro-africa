@@ -18,25 +18,18 @@
   background-color: #f0eeff;
 }
 
-<<<<<<< HEAD
-/* Header */
-=======
 /* Header gradient with purple shades */
->>>>>>> 86ec155e30f86c5faadcd6e06a45e3492de0b32d
 .bg-gradient-eziagbor {
   background: linear-gradient(135deg, #4a3aff 0%, #ab7ef1 50%, #867cff 100%);
   position: relative;
   overflow: hidden;
 }
 
-<<<<<<< HEAD
-=======
 /* Footer hover links */
 .hover-link:hover {
   color: #6b5fff !important;
 }
 
->>>>>>> 86ec155e30f86c5faadcd6e06a45e3492de0b32d
 /* Contact page */
 .contact-icon-eziagbor {
   width: 40px;
@@ -61,14 +54,6 @@
   box-shadow: 0 0 0 0.2rem rgba(74, 58, 255, 0.1);
 }
 
-<<<<<<< HEAD
-/* Footer  */
-.hover-link:hover {
-  color: #6b5fff !important;
-}
-
-=======
->>>>>>> 86ec155e30f86c5faadcd6e06a45e3492de0b32d
 .footer input.form-control:focus {
   background-color: transparent;
   color: white;
