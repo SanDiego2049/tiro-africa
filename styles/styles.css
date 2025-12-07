@@ -1000,7 +1000,7 @@ aside .form-check-input {
 .was-validated .form-select:valid,
 .form-control.is-valid,
 .form-select.is-valid {
-  background-image: none !important;
+  background-image: none;
 }
 
 /*responsiveness design */
