@@ -252,7 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <h4 class="alert-heading">Job Not Found</h4>
           <p>The job you're looking for doesn't exist or has been removed.</p>
           <hr>
-          <a href="job-board.html" class="btn btn-primary">Back to Jobs</a>
+          <a href="job-board.html" class="btn btn-teal">Back to Jobs</a>
         </div>
       </div>
     `;
