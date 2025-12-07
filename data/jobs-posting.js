@@ -7,7 +7,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€100000-€120000",
     "location": "New York, USA",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "10 min ago"
   },
   {
@@ -18,7 +18,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€120000-€150000",
     "location": "San Francisco, USA",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "1 hour ago"
   },
   {
@@ -29,7 +29,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€80000-€95000",
     "location": "London, UK",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "2 hours ago"
   },
   {
@@ -40,7 +40,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€70000-€85000",
     "location": "Boston, USA",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "3 hours ago"
   },
   {
@@ -51,7 +51,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€65000-€80000",
     "location": "Dubai, UAE",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "5 hours ago"
   },
   {
@@ -62,7 +62,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€75000-€90000",
     "location": "Toronto, Canada",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "6 hours ago"
   },
   {
@@ -73,7 +73,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€45000-€55000",
     "location": "Austin, USA",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "8 hours ago"
   },
   {
@@ -84,7 +84,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€60000-€75000",
     "location": "Chicago, USA",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "10 hours ago"
   },
   {
@@ -95,7 +95,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€50000-€65000",
     "location": "Nairobi, Kenya",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "12 hours ago"
   },
   {
@@ -106,7 +106,7 @@ const jobsData = [
     "type": "Freelance",
     "salary": "€40000-€60000",
     "location": "Remote",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "1 day ago"
   },
   {
@@ -117,7 +117,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€90000-€110000",
     "location": "Sydney, Australia",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "1 day ago"
   },
   {
@@ -128,7 +128,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€85000-€100000",
     "location": "New York, USA",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "2 days ago"
   },
   {
@@ -139,7 +139,7 @@ const jobsData = [
     "type": "Part time",
     "salary": "€30000-€40000",
     "location": "Paris, France",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "2 days ago"
   },
   {
@@ -150,7 +150,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€70000-€90000",
     "location": "Berlin, Germany",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "3 days ago"
   },
   {
@@ -161,7 +161,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€45000-€60000",
     "location": "Miami, USA",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "3 days ago"
   },
   {
@@ -172,7 +172,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€65000-€80000",
     "location": "Los Angeles, USA",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "4 days ago"
   },
   {
@@ -183,7 +183,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€70000-€95000",
     "location": "Oxford, UK",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "5 days ago"
   },
   {
@@ -194,7 +194,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€65000-€80000",
     "location": "Seattle, USA",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "5 days ago"
   },
   {
@@ -205,7 +205,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€55000-€70000",
     "location": "Cape Town, South Africa",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "6 days ago"
   },
   {
@@ -216,7 +216,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€75000-€95000",
     "location": "Amsterdam, Netherlands",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "1 week ago"
   },
   {
@@ -227,7 +227,7 @@ const jobsData = [
     "type": "Part time",
     "salary": "€25000-€35000",
     "location": "Barcelona, Spain",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "1 week ago"
   },
   {
@@ -238,7 +238,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€60000-€75000",
     "location": "Dublin, Ireland",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "1 week ago"
   },
   {
@@ -249,7 +249,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€110000-€140000",
     "location": "Singapore",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "2 weeks ago"
   },
   {
@@ -260,7 +260,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€80000-€100000",
     "location": "Tokyo, Japan",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "2 weeks ago"
   },
   {
@@ -271,7 +271,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€50000-€65000",
     "location": "Portland, USA",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "2 weeks ago"
   },
   {
@@ -282,7 +282,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€45000-€60000",
     "location": "Melbourne, Australia",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "3 weeks ago"
   },
   {
@@ -293,7 +293,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€65000-€85000",
     "location": "Accra, Ghana",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "3 weeks ago"
   },
   {
@@ -304,7 +304,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€70000-€90000",
     "location": "Hong Kong",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "3 weeks ago"
   },
   {
@@ -315,7 +315,7 @@ const jobsData = [
     "type": "Full time",
     "salary": "€75000-€95000",
     "location": "Maldives",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "1 month ago"
   },
   {
@@ -326,7 +326,7 @@ const jobsData = [
     "type": "Internship",
     "salary": "€20000-€30000",
     "location": "Lagos, Nigeria",
-    "logo": "../assets/job-logo.png",
+    "logo": "../assets/job-logo.webp",
     "postedTime": "1 month ago"
   }
 ]
